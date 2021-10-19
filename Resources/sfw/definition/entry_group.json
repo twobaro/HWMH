@@ -1,0 +1,58 @@
+{
+    "definition": {
+        "ident": "group",
+        "visions": ["wellness"],
+        "xliff": "entry.groups",
+        "label": "Groups",
+        "icon": "image/entry/group-50x50.png",
+        "dataclass": "Group",
+        "searchbox": {
+            "fields": [
+                {
+                    "attribute": "name"
+                }
+            ]
+        },
+        "panel": {
+            "name": "panel_group",
+            "pages": [
+                {
+                    "page": 1,
+                    "pict": "persons-32x32.png"
+                }]
+        },
+        "validationRules": [
+            {
+                "field": "name",
+                "widget": "entryField_name",
+                "mandatory": true,
+                "trimSpace": true,
+                "capitalize": true
+            }
+        ],
+
+        "lb_items": {
+            "columns": [
+                {
+                    "attribute": "name",
+                    "label": "name",
+                    "xliff": "entry.group.field.name",
+                    "width": 200
+                    }
+                ],
+            "orderBy": [
+                {
+                    "propertyPath": "name",
+                    "descending": "false"
+                    }
+                ],
+            "counter": {
+                "format": "###,###,##0 ^1;;",
+                "unit1": "group",
+                "unitN": "groups",
+                "unit1xliff":"entry.group.unit1",
+                "unitNxliff":"entry.group.unitN"
+            }
+        }
+    }
+}

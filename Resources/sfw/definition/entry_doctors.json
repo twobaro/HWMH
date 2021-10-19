@@ -1,0 +1,146 @@
+{
+    "definition": {
+        "ident": "doctor",
+        "visions": ["health"],
+        "xliff": "entry.doctors",
+        "label": "Doctors",
+        "icon": "image/entry/doctor-50x50.png",
+        "dataclass": "MedicalStaff",
+        "searchbox": {
+            "fields": [
+                {
+                    "attribute": "firstName"
+                },
+                {
+                    "attribute": "lastName"
+                },
+                {
+                    "attribute": "address.address[].detail.city",
+                    "fieldPlaceHolder": "city"
+                }
+            ]
+        },
+        "panel": {
+            "name": "panel_medicalStaff",
+            "pages": [
+                {
+                    "page": 2,
+                    "pict": "ability-32x32.png"
+                },
+                {
+                    "page": 3,
+                    "pict": "appointments-32x32.png"
+                },
+                {
+                    "page": 1,
+                    "pict": "address-32x32.png"
+                },
+                {
+                    "page": 4,
+                    "pict": "photo-32x32.png"
+                }],
+            "currentPage": 3
+        },
+        "validationRules": [
+            {
+                "field": "firstName",
+                "widget": "entryField_firstName",
+                "mandatory": true,
+                "trimSpace": true,
+                "capitalize": true
+            },
+            {
+                "field": "lastName",
+                "widget": "entryField_lastName",
+                "mandatory": true,
+                "trimSpace": true,
+                "uppercase": true
+            }
+        ],
+        "lb_items": {
+            "columns": [
+                {
+                    "attribute": "firstName",
+                    "label": "First Name",
+                    "xliff": "entry.medicalStaff.field.firstName"
+                    },
+                {
+                    "attribute": "lastName",
+                    "label": "Last Name",
+                    "xliff": "entry.medicalStaff.field.lastName"
+                    },
+                {
+                    "attribute": "address.address[0].detail.city",
+                    "label": "City",
+                    "xliff": "address.city",
+                    "orderBy": {
+                        "formula": "this.address.address[0].detail.city"
+                    }
+                }
+                ],
+            "orderBy": [
+                {
+                    "propertyPath": "lastName",
+                    "descending": "false"
+                    },
+                {
+                    "propertyPath": "firstName",
+                    "descending": "false"
+                    }
+                ],
+            "counter": {
+                "format": "###,###,##0 ^1;;",
+                "unit1": "doctor",
+                "unitN": "doctors",
+                "unit1xliff":"entry.doctor.unit1",
+                "unitNxliff":"entry.doctor.unitN"
+            }
+        },
+        "views": [
+            {
+                "ident": "viewLBDoctor",
+                "label": "List of doctors",
+                "lb_items": {
+                    "columns": [
+                        {
+                            "attribute": "firstName",
+                            "label": "First Name",
+                            "xliff": "entry.medicalStaff.field.firstName"
+                    },
+                        {
+                            "attribute": "lastName",
+                            "label": "Last Name",
+                            "xliff": "entry.medicalStaff.field.lastName"
+                    },
+                        {
+                            "attribute": "address.address[0].detail.city",
+                            "label": "City",
+                            "xliff": "address.city",
+                            "orderBy": {
+                                "formula": "this.address.address[0].detail.city"
+                            }
+                }
+                ],
+                    "orderBy": [
+                        {
+                            "propertyPath": "lastName",
+                            "descending": "false"
+                    },
+                        {
+                            "propertyPath": "firstName",
+                            "descending": "false"
+                    }
+                ],
+                    "counter": {
+                        "format": "###,###,##0 ^1;;",
+                        "unit1": "doctor",
+                        "unitN": "doctors",
+                "unit1xliff":"entry.doctor.unit1",
+                "unitNxliff":"entry.doctor.unitN"
+                    }
+                }
+            }
+        ]
+
+    }
+}

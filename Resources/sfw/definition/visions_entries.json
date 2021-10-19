@@ -1,0 +1,93 @@
+{
+    "visions": [
+        {
+            "ident": "customer",
+            "xliff": "vision.customer",
+            "label": "Customer",
+            "toolbar": {
+                "color": "#52ABD8",
+                "focusRing": "navy"
+            }
+        },
+        {
+            "ident": "health",
+            "xliff": "vision.health",
+            "label": "Health",
+            "toolbar": {
+                "color": "#A6C1D5"
+            }
+        },
+        {
+            "ident": "wellness",
+            "xliff": "vision.wellness",
+            "label": "Wellness",
+            "toolbar": {
+                "color": "#D7E6A9"
+            }
+        },
+        {
+            "ident": "line",
+            "label": "-",
+            "toolbar": {
+                "color": "#D7E6A9"
+            }
+        },
+        {
+            "ident": "administration",
+            "xliff": "vision.administration",
+            "label": "Administration",
+            "toolbar": {
+                "color": "#E0E0E0"
+            }
+        }
+    ],
+    "entries": [
+        {
+            "ident": "doctor",
+            "$ref":"/RESOURCES/sfw/definition/entry_doctors.json#/definition"
+        },
+        {
+            "ident": "consultationKind",
+            "$ref":"/RESOURCES/sfw/definition/entry_consultationKind.json#/definition"
+        },
+        {
+            "ident": "customer",
+            "$ref":"/RESOURCES/sfw/definition/entry_customers.json#/definition"
+        },
+        {
+            "ident": "appointment",
+            "visions": ["health", "customer"],
+            "xliff": "entry.appointment",
+            "label": "Appointments",
+            "icon": "image/entry/calendar2-50x50.png"
+        },
+        {
+            "ident": "newAppointment",
+            "$ref":"/RESOURCES/sfw/definition/entry_newAppointment.json#/definition"
+        },
+        {
+            "ident": "coach",
+            "$ref":"/RESOURCES/sfw/definition/entry_coachs.json#/definition"
+        },
+        {
+            "ident": "activity",
+            "$ref":"/RESOURCES/sfw/definition/entry_activity.json#/definition"
+        },
+        {
+            "ident": "group",
+            "$ref":"/RESOURCES/sfw/definition/entry_group.json#/definition"
+        },
+        {
+            "ident": "medicalHouse",
+            "$ref":"/RESOURCES/sfw/definition/entry_medicalHouse.json#/definition"
+        },
+        {
+            "ident": "healthdashboard",
+            "$ref":"/RESOURCES/sfw/definition/entry_healthdashboard.json#/definition"
+        },
+        {
+            "ident": "country",
+            "$ref":"/RESOURCES/sfw/definition/entry_country.json#/definition"
+        }
+    ]
+}

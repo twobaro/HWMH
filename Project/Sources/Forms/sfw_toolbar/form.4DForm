@@ -1,0 +1,364 @@
+﻿{
+	"destination": "detailScreen",
+	"width": 1400,
+	"height": 68,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"bkgd_toolbar": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1400,
+					"height": 68,
+					"sizingX": "grow",
+					"fill": "#A6C1D5",
+					"stroke": "transparent"
+				},
+				"Rectangle rond": {
+					"type": "rectangle",
+					"top": 10,
+					"left": 15,
+					"width": 113,
+					"height": 48,
+					"stroke": "transparent",
+					"borderRadius": 10
+				},
+				"Rectangle rond2": {
+					"type": "rectangle",
+					"top": 15,
+					"left": 1166,
+					"width": 215,
+					"height": 36,
+					"sizingX": "move",
+					"stroke": "transparent",
+					"borderRadius": 16
+				},
+				"Image7": {
+					"type": "picture",
+					"top": 22,
+					"left": 1176,
+					"width": 24,
+					"height": 24,
+					"sizingX": "move",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/image/logo/loupe.png"
+				},
+				"Texte": {
+					"type": "text",
+					"top": 25,
+					"left": 1212,
+					"width": 148,
+					"height": 17,
+					"sizingX": "move",
+					"stroke": "#C0C0C0",
+					"text": ":xliff:search.globalSearch"
+				},
+				"bToolbar_1": {
+					"type": "button",
+					"top": 9,
+					"left": 148,
+					"width": 50,
+					"height": 50,
+					"focusable": false,
+					"icon": "/RESOURCES/image/entry/doctor-50x50.png",
+					"style": "custom",
+					"method": "ObjectMethods/bToolbar_1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bToolbar_2": {
+					"type": "button",
+					"top": 9,
+					"left": 212,
+					"width": 50,
+					"height": 50,
+					"focusable": false,
+					"icon": "/RESOURCES/image/entry/doctor-50x50.png",
+					"style": "custom",
+					"method": "ObjectMethods/bToolbar_2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bToolbar_3": {
+					"type": "button",
+					"top": 9,
+					"left": 276,
+					"width": 50,
+					"height": 50,
+					"focusable": false,
+					"icon": "/RESOURCES/image/entry/doctor-50x50.png",
+					"style": "custom",
+					"method": "ObjectMethods/bToolbar_3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bToolbar_4": {
+					"type": "button",
+					"top": 9,
+					"left": 340,
+					"width": 50,
+					"height": 50,
+					"focusable": false,
+					"icon": "/RESOURCES/image/entry/doctor-50x50.png",
+					"style": "custom",
+					"method": "ObjectMethods/bToolbar_4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bToolbar_5": {
+					"type": "button",
+					"top": 9,
+					"left": 404,
+					"width": 50,
+					"height": 50,
+					"focusable": false,
+					"icon": "/RESOURCES/image/entry/doctor-50x50.png",
+					"style": "custom",
+					"method": "ObjectMethods/bToolbar_5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bToolbar_6": {
+					"type": "button",
+					"top": 9,
+					"left": 468,
+					"width": 50,
+					"height": 50,
+					"focusable": false,
+					"icon": "/RESOURCES/image/entry/doctor-50x50.png",
+					"style": "custom",
+					"method": "ObjectMethods/bToolbar_6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bToolbar_7": {
+					"type": "button",
+					"top": 9,
+					"left": 532,
+					"width": 50,
+					"height": 50,
+					"focusable": false,
+					"icon": "/RESOURCES/image/entry/doctor-50x50.png",
+					"style": "custom",
+					"method": "ObjectMethods/bToolbar_7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bToolbar_8": {
+					"type": "button",
+					"top": 9,
+					"left": 596,
+					"width": 50,
+					"height": 50,
+					"focusable": false,
+					"icon": "/RESOURCES/image/entry/doctor-50x50.png",
+					"style": "custom",
+					"method": "ObjectMethods/bToolbar_8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bToolbar_9": {
+					"type": "button",
+					"top": 9,
+					"left": 660,
+					"width": 50,
+					"height": 50,
+					"focusable": false,
+					"icon": "/RESOURCES/image/entry/doctor-50x50.png",
+					"style": "custom",
+					"method": "ObjectMethods/bToolbar_9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bToolbar_10": {
+					"type": "button",
+					"top": 9,
+					"left": 724,
+					"width": 50,
+					"height": 50,
+					"focusable": false,
+					"icon": "/RESOURCES/image/entry/doctor-50x50.png",
+					"style": "custom",
+					"method": "ObjectMethods/bToolbar_10.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bToolbar_11": {
+					"type": "button",
+					"top": 9,
+					"left": 788,
+					"width": 50,
+					"height": 50,
+					"focusable": false,
+					"icon": "/RESOURCES/image/entry/doctor-50x50.png",
+					"style": "custom",
+					"method": "ObjectMethods/bToolbar_11.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bToolbar_12": {
+					"type": "button",
+					"top": 9,
+					"left": 852,
+					"width": 50,
+					"height": 50,
+					"focusable": false,
+					"icon": "/RESOURCES/image/entry/doctor-50x50.png",
+					"style": "custom",
+					"method": "ObjectMethods/bToolbar_12.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bToolbar_13": {
+					"type": "button",
+					"top": 9,
+					"left": 916,
+					"width": 50,
+					"height": 50,
+					"focusable": false,
+					"icon": "/RESOURCES/image/entry/doctor-50x50.png",
+					"style": "custom",
+					"method": "ObjectMethods/bToolbar_13.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bToolbar_14": {
+					"type": "button",
+					"top": 9,
+					"left": 980,
+					"width": 50,
+					"height": 50,
+					"focusable": false,
+					"icon": "/RESOURCES/image/entry/doctor-50x50.png",
+					"style": "custom",
+					"method": "ObjectMethods/bToolbar_14.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bToolbar_15": {
+					"type": "button",
+					"top": 9,
+					"left": 1044,
+					"width": 50,
+					"height": 50,
+					"focusable": false,
+					"icon": "/RESOURCES/image/entry/doctor-50x50.png",
+					"style": "custom",
+					"method": "ObjectMethods/bToolbar_15.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bToolbar_16": {
+					"type": "button",
+					"top": 9,
+					"left": 1108,
+					"width": 50,
+					"height": 50,
+					"focusable": false,
+					"icon": "/RESOURCES/image/entry/doctor-50x50.png",
+					"style": "custom",
+					"method": "ObjectMethods/bToolbar_16.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Image9": {
+					"type": "picture",
+					"top": 45,
+					"left": 111,
+					"width": 11,
+					"height": 11,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/image/element/MacCollapse.png"
+				},
+				"pup_hwmh": {
+					"type": "button",
+					"top": 15,
+					"left": 25,
+					"width": 92,
+					"height": 39,
+					"focusable": false,
+					"icon": "/RESOURCES/image/logo/HWMH-logo-100x25.png",
+					"style": "custom",
+					"method": "ObjectMethods/pup_hwmh.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton invisible": {
+					"type": "button",
+					"top": 19,
+					"left": 1175,
+					"width": 190,
+					"height": 28,
+					"sizingX": "move",
+					"display": false,
+					"method": "ObjectMethods/Bouton invisible.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton": {
+					"type": "button",
+					"top": 0,
+					"left": 0,
+					"width": 15,
+					"height": 10,
+					"action": "design",
+					"focusable": false,
+					"text": "Button",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

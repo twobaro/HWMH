@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+   <!--Translation file.This file is distributed under the same license as the product package.-->
+<xliff version="1.0">
+   <file datatype="x-STR#" original="undefined" source-language="en" target-language="en">
+      <header>
+         <prop-group name="Xliff-Editor.4dbase">
+            <prop prop-type="version">1.0</prop>
+         </prop-group>
+      </header>
+      <body>
+         <group resname="DateAndTime">
+            <trans-unit id="33" resname="dateAndTime.abrev.day1">
+               <source>S</source>
+               <target>S</target>
+            </trans-unit>
+            <trans-unit id="34" resname="dateAndTime.abrev.day2">
+               <source>M</source>
+               <target>M</target>
+            </trans-unit>
+            <trans-unit id="35" resname="dateAndTime.abrev.day3">
+               <source>T</source>
+               <target>T</target>
+            </trans-unit>
+            <trans-unit id="36" resname="dateAndTime.abrev.day4">
+               <source>W</source>
+               <target>W</target>
+            </trans-unit>
+            <trans-unit id="37" resname="dateAndTime.abrev.day5">
+               <source>T</source>
+               <target>T</target>
+            </trans-unit>
+            <trans-unit id="38" resname="dateAndTime.abrev.day6">
+               <source>F</source>
+               <target>F</target>
+            </trans-unit>
+            <trans-unit id="65" resname="dateAndTime.abrev.day7">
+               <source>S</source>
+               <target>S</target>
+            </trans-unit>
+            <trans-unit id="74" resname="dateAndTime.date">
+               <source>Date</source>
+               <target>Date</target>
+            </trans-unit>
+            <trans-unit id="2" resname="dateAndTime.days">
+               <source>Sunday;Monday;Tuesday;Wednesday;Thursday;Friday;Saturday</source>
+               <target>Sunday;Monday;Tuesday;Wednesday;Thursday;Friday;Saturday</target>
+            </trans-unit>
+            <trans-unit id="31" resname="dateAndTime.duration">
+               <source>Duration</source>
+               <target>Duration</target>
+            </trans-unit>
+            <trans-unit id="32" resname="dateAndTime.duration.abrev">
+               <source>Dur.</source>
+               <target>Dur.</target>
+            </trans-unit>
+            <trans-unit id="68" resname="dateAndTime.duration.ninemonths">
+               <source>nine months</source>
+               <target>nine months</target>
+            </trans-unit>
+            <trans-unit id="39" resname="dateAndTime.duration.onemonth">
+               <source>one month</source>
+               <target>one month</target>
+            </trans-unit>
+            <trans-unit id="69" resname="dateAndTime.duration.oneyear">
+               <source>one year</source>
+               <target>one year</target>
+            </trans-unit>
+            <trans-unit id="66" resname="dateAndTime.duration.sixmonths">
+               <source>six months</source>
+               <target>six months</target>
+            </trans-unit>
+            <trans-unit id="67" resname="dateAndTime.duration.threemonths">
+               <source>three months</source>
+               <target>three months</target>
+            </trans-unit>
+            <trans-unit id="76" resname="dateAndTime.from">
+               <source>From</source>
+               <target>From</target>
+            </trans-unit>
+            <trans-unit id="25" resname="dateAndTime.minDuration">
+               <source>Min duration</source>
+               <target>Min duration</target>
+            </trans-unit>
+            <trans-unit id="1" resname="dateAndTime.months">
+               <source>January;Febuary;March;April;May;June;July;August;September;October;November;December</source>
+               <target>January;Febuary;March;April;May;June;July;August;September;October;November;December</target>
+            </trans-unit>
+            <trans-unit id="77" resname="dateAndTime.onlyThisDate">
+               <source>Only this date</source>
+               <target>Only this date</target>
+            </trans-unit>
+            <trans-unit id="21" resname="dateAndTime.remove">
+               <source>remove</source>
+               <target>remove</target>
+            </trans-unit>
+            <trans-unit id="22" resname="dateAndTime.removeAll">
+               <source>remove all</source>
+               <target>remove all</target>
+            </trans-unit>
+            <trans-unit id="19" resname="dateAndTime.startAt">
+               <source>start at</source>
+               <target>start at</target>
+            </trans-unit>
+            <trans-unit id="20" resname="dateAndTime.stopAt">
+               <source>stop at</source>
+               <target>stop at</target>
+            </trans-unit>
+            <trans-unit id="30" resname="dateAndTime.time">
+               <source>Time</source>
+               <target>Time</target>
+            </trans-unit>
+            <trans-unit id="70" resname="dateAndTime.today">
+               <source>today</source>
+               <target>today</target>
+            </trans-unit>
+            <trans-unit id="72" resname="dateAndTime.tomorrow">
+               <source>tomorrow</source>
+               <target>tomorrow</target>
+            </trans-unit>
+            <trans-unit id="71" resname="dateAndTime.yesterday">
+               <source>yesterday</source>
+               <target>yesterday</target>
+            </trans-unit>
+         </group>
+         <group resname="Periods">
+            <trans-unit id="23" resname="period.label">
+               <source>Period</source>
+               <target>Period</target>
+            </trans-unit>
+            <trans-unit id="3" resname="period.type.bankHoliday">
+               <source>Bank Holiday</source>
+               <target>Bank Holiday</target>
+            </trans-unit>
+            <trans-unit id="5" resname="period.type.default">
+               <source>Default</source>
+               <target>Default</target>
+            </trans-unit>
+            <trans-unit id="10" resname="period.type.except">
+               <source>except:</source>
+               <target>except:</target>
+            </trans-unit>
+            <trans-unit id="4" resname="period.type.holiday">
+               <source>Holiday</source>
+               <target>Holiday</target>
+            </trans-unit>
+            <trans-unit id="24" resname="period.type.label">
+               <source>Period type</source>
+               <target>Period type</target>
+            </trans-unit>
+            <trans-unit id="8" resname="period.type.month">
+               <source>Month</source>
+               <target>Month</target>
+            </trans-unit>
+            <trans-unit id="9" resname="period.type.noException">
+               <source>no exception</source>
+               <target>no exception</target>
+            </trans-unit>
+            <trans-unit id="7" resname="period.type.quarter">
+               <source>Quarter</source>
+               <target>Quarter</target>
+            </trans-unit>
+            <trans-unit id="18" resname="period.type.work">
+               <source>Work</source>
+               <target>Work</target>
+            </trans-unit>
+            <trans-unit id="6" resname="period.type.year">
+               <source>Year</source>
+               <target>Year</target>
+            </trans-unit>
+            <trans-unit id="76" resname="period.type.only">
+               <source>only:</source>
+               <target>only:</target>
+            </trans-unit>
+         </group>
+         <group resname="CRUD">
+            <trans-unit id="11" resname="crud.mode.visualization">
+               <source>Visualization</source>
+               <target>Visualization</target>
+            </trans-unit>
+            <trans-unit id="12" resname="crud.mode.modification">
+               <source>Modification</source>
+               <target>Modification</target>
+            </trans-unit>
+            <trans-unit id="13" resname="crud.mode.creation">
+               <source>Creation</source>
+               <target>Creation</target>
+            </trans-unit>
+            <trans-unit id="14" resname="crud.mode.deletion">
+               <source>Deletion</source>
+               <target>Deletion</target>
+            </trans-unit>
+            <trans-unit id="51" resname="crud.mode.chooseAMode">
+               <source>Choose a mode</source>
+               <target>Choose a mode</target>
+            </trans-unit>
+         </group>
+         <group resname="Deletion">
+            <trans-unit id="15" resname="deletion.message">
+               <source>Do you really want to delete this item?</source>
+               <target>Do you really want to delete this item?</target>
+            </trans-unit>
+            <trans-unit id="16" resname="deletion.button.delete">
+               <source>Delete</source>
+               <target>Delete</target>
+            </trans-unit>
+            <trans-unit id="17" resname="deletion.button.keep">
+               <source>Keep</source>
+               <target>Keep</target>
+            </trans-unit>
+         </group>
+         <group resname="WorkingRange">
+            <trans-unit id="26" resname="workingRanges.label">
+               <source>Working ranges</source>
+               <target>Working ranges</target>
+            </trans-unit>
+            <trans-unit id="29" resname="workingRanges.warningNoWorkings">
+               <source>It's neccessary to define schedule for this professional before create appointments</source>
+               <target>It's neccessary to define schedule for this professional before create appointments</target>
+            </trans-unit>
+         </group>
+         <group resname="Address">
+            <trans-unit id="27" resname="address.city">
+               <source>City</source>
+               <target>City</target>
+            </trans-unit>
+            <trans-unit id="28" resname="address.label">
+               <source>Address</source>
+               <target>Address</target>
+            </trans-unit>
+            <trans-unit id="73" resname="address.menu.erase">
+               <source>Erase</source>
+               <target>Erase</target>
+            </trans-unit>
+         </group>
+         <group resname="Search">
+            <trans-unit id="40" resname="search.localSearch">
+               <source>local search</source>
+               <target>local search</target>
+            </trans-unit>
+            <trans-unit id="41" resname="search.globalSearch">
+               <source>global search</source>
+               <target>global search</target>
+            </trans-unit>
+         </group>
+         <group resname="Dialog">
+            <trans-unit id="43" resname="dialog.saveCancelContinue.message">
+               <source>Data has been modified on the item being edited. 
+Selecting "Save" will store the modification before continuing.
+Selecting "Cancel" will discard all the modification before continuing.
+Selecting "Continue" will keep you on the screen and continue with the changes in progress</source>
+               <target>Data has been modified on the item being edited. 
+Selecting "Save" will store the modification before continuing.
+Selecting "Cancel" will discard all the modification before continuing.
+Selecting "Continue" will keep you on the screen and continue with the changes in progress</target>
+            </trans-unit>
+            <trans-unit id="44" resname="dialog.saveCancelContinue.button.continue">
+               <source>Continue</source>
+               <target>Continue</target>
+            </trans-unit>
+            <trans-unit id="45" resname="dialog.saveCancelContinue.button.cancel">
+               <source>Cancel</source>
+               <target>Cancel</target>
+            </trans-unit>
+            <trans-unit id="46" resname="dialog.saveCancelContinue.button.save">
+               <source>Save</source>
+               <target>Save</target>
+            </trans-unit>
+            <trans-unit id="46" resname="dialog.createRenounceContinue.message">
+               <source>Data has been modified on the item being edited. 
+Selecting "Create" will create the new item before continuing.
+Selecting "Renounce" will discard all the creation before continuing.
+Selecting "Continue" will keep you on the screen and continue with the changes in progress</source>
+               <target>Data has been modified on the item being edited. 
+Selecting "Create" will create the new item before continuing.
+Selecting "Renounce" will discard all the creation before continuing.
+Selecting "Continue" will keep you on the screen and continue with the changes in progress</target>
+            </trans-unit>
+            <trans-unit id="47" resname="dialog.createRenounceContinue.button.continue">
+               <source>Continue</source>
+               <target>Continue</target>
+            </trans-unit>
+            <trans-unit id="48" resname="dialog.createRenounceContinue.button.renounce">
+               <source>Renounce</source>
+               <target>Renounce</target>
+            </trans-unit>
+            <trans-unit id="49" resname="dialog.createRenounceContinue.button.create">
+               <source>Create</source>
+               <target>Create</target>
+            </trans-unit>
+         </group>
+         <group resname="Button">
+            <trans-unit id="52" resname="button.accept">
+               <source>Accept</source>
+               <target>Accept</target>
+            </trans-unit>
+            <trans-unit id="51" resname="button.cancel">
+               <source>Cancel</source>
+               <target>Cancel</target>
+            </trans-unit>
+            <trans-unit id="54" resname="button.create">
+               <source>Create</source>
+               <target>Create</target>
+            </trans-unit>
+            <trans-unit id="55" resname="button.delete">
+               <source>Delete</source>
+               <target>Delete</target>
+            </trans-unit>
+            <trans-unit id="56" resname="button.reload">
+               <source>Reload</source>
+               <target>Reload</target>
+            </trans-unit>
+            <trans-unit id="53" resname="button.renounce">
+               <source>Renounce</source>
+               <target>Renounce</target>
+            </trans-unit>
+         </group>
+         <group resname="Country">
+            <trans-unit id="58" resname="entry.countries">
+               <source>Countries</source>
+               <target>Countries</target>
+            </trans-unit>
+            <trans-unit id="59" resname="entry.country">
+               <source>Country</source>
+               <target>Country</target>
+            </trans-unit>
+            <trans-unit id="60" resname="entry.sfw_country.field.name">
+               <source>Name</source>
+               <target>Name</target>
+            </trans-unit>
+            <trans-unit id="61" resname="entry.sfw_country.field.iso_code_2">
+               <source>Iso code 2</source>
+               <target>Iso code 2</target>
+            </trans-unit>
+            <trans-unit id="62" resname="entry.sfw_country.field.capital">
+               <source>Capital</source>
+               <target>Capital</target>
+            </trans-unit>
+            <trans-unit id="63" resname="entry.sfw_country.isoCodes">
+               <source>Iso codes</source>
+               <target>Iso codes</target>
+            </trans-unit>
+            <trans-unit id="63" resname="entry.sfw_country.unit1">
+               <source>country</source>
+               <target>country</target>
+            </trans-unit>
+            <trans-unit id="64" resname="entry.sfw_country.unitN">
+               <source>countries</source>
+               <target>countries</target>
+            </trans-unit>
+         </group>
+         <group resname="Message">
+            <trans-unit id="78" resname="message.ooups">
+               <source>Oops... it seems that some code is missing here!</source>
+               <target>Oops... it seems that some code is missing here!</target>
+            </trans-unit>
+         </group>
+      </body>
+   </file>
+</xliff>

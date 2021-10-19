@@ -1,0 +1,82 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 269,
+					"left": 461,
+					"width": 601,
+					"height": 321,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"fill": "#D7E6A9",
+					"stroke": "transparent"
+				},
+				"bkgd_tables": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 193,
+					"height": 590,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#045B92",
+					"stroke": "transparent"
+				},
+				"bkgd_items": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 193,
+					"width": 267,
+					"height": 590,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#97BF0D",
+					"stroke": "transparent"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 460,
+					"width": 601,
+					"height": 269,
+					"sizingX": "grow",
+					"fill": "#A6C1D5",
+					"stroke": "transparent"
+				}
+			}
+		}
+	]
+}

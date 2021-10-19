@@ -1,0 +1,35 @@
+{
+    "definition": {
+        "ident": "heathdashboard",
+        "visions": ["health"],
+        "xliff": "entry.heathdashboard",
+        "label": "Dashboards",
+        "icon": "image/entry/speedometer-50x50.png",
+        "virtual":"collection",
+        "items":[
+            {
+                "name":"onYearOfAppointments",
+                "xliff":"healthdasboard.title.oneYearOfAppointmets",
+                "panel":{
+                    "name":"hdb_oneYearOfAppointments"
+                }
+            },
+            {
+                "name":"onYearOfAppointments (arrays)",
+                "xliff":"healthdasboard.title.oneYearOfAppointmets",
+                "panel":{
+                    "name":"hdb_oneYearOfAppointmentsArray"
+                },
+                "actions":[
+                    {
+                        "label":"demoxxxxxxxx",
+                        "xliff":"Démo",
+                        "method":"zzzz"
+                    }
+                ],
+                "options":[{"OuafaTouch":true}
+                        ]
+            }
+        ]
+    }
+}

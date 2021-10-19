@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="HWMH" uuid="0710C58D863E45BD97ACF1AA415F7604" collation_locale="fr">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="MedicalStaff" uuid="B34F0CBCE1D747BFB6DBD4C6CA4E8358" id="1">
+		<field name="UUID" uuid="7E925CCCAF1B49E6B699B780BF5F6DF3" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="civility" uuid="8EB57DF30D7345409787B58BFF3DBCBD" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="lastName" uuid="362A6E93B95E4CB1A771F87A20BF108B" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="firstName" uuid="353D211FD02E49348807F0DAA96DBA49" type="10" limiting_length="255" never_null="true" id="4"/>
+		<field name="address" uuid="0733FE760B5642B0BC963DE127EB6AC0" type="21" blob_switch_size="2147483647" never_null="true" id="5"/>
+		<field name="photo" uuid="0188F5D6091B43CAA301AAD16BDE98FE" type="12" never_null="true" id="6"/>
+		<primary_key field_name="UUID" field_uuid="7E925CCCAF1B49E6B699B780BF5F6DF3"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info displayable_fields_count="8">
+				<color red="181" green="145" blue="209" alpha="255"/>
+				<coordinates left="543.98828125" top="42.546875" width="156.54296875" height="210.9921875"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Appointment" uuid="D035FD2FB7BB480FA8A8CB77EF2CE8C7" id="2">
+		<field name="UUID" uuid="E5BB608CA24D43A2A51CCEEBD73A3ACD" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="UUID_MedicalStaff" uuid="D4E9BDE4B73B4CF8A7F48BC44703F85F" type="10" store_as_UUID="true" never_null="true" id="2"/>
+		<field name="UUID_Person" uuid="A495137DED684BFD96200A432E8BBC4A" type="10" store_as_UUID="true" never_null="true" id="3"/>
+		<field name="UUID_ConsultationKind" uuid="1848B888C7A34F29827C7867086133A3" type="10" store_as_UUID="true" never_null="true" id="4"/>
+		<field name="UUID_MedicalHouse" uuid="C074C1A0A3BE4A8886FC7A9AA07DB6EE" type="10" store_as_UUID="true" never_null="true" id="5"/>
+		<field name="startStmp" uuid="EC804213ED3A4F8EA7D4448E01E33C8F" type="4" never_null="true" id="6"/>
+		<field name="duration" uuid="6F7BD4F20D82499CA595EB3E968A1EDD" type="4" never_null="true" id="7"/>
+		<field name="idStatus" uuid="8FF4688430E94B1199345544E7197C9D" type="3" never_null="true" id="8"/>
+		<field name="chronoStatus" uuid="B1D7FA0F270D478AAAEB61D9B1BDAEA3" type="21" blob_switch_size="2147483647" never_null="true" id="9"/>
+		<primary_key field_name="UUID" field_uuid="E5BB608CA24D43A2A51CCEEBD73A3ACD"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info displayable_fields_count="10">
+				<color red="150" green="216" blue="175" alpha="255"/>
+				<coordinates left="1481.6640625" top="21.765625" width="211.42708333333" height="264.3203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Person" uuid="FCDA3BD7C1D145AC84082F53EF9D32C3" id="3">
+		<field name="UUID" uuid="836B0F65D49744FC992542427E8ECFD6" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="civility" uuid="07652074FFED4A7896A1A34C01ABFF0B" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="lastName" uuid="A8E1B83872D14639AB17368C27EBEC96" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="firstName" uuid="160AC652560D48609D96EAA490631A65" type="10" limiting_length="255" never_null="true" id="4"/>
+		<field name="address" uuid="EC55635EBE6E4B7B909505FE20FD4007" type="21" blob_switch_size="2147483647" never_null="true" id="5"/>
+		<field name="birthdate" uuid="C396ED13B82D4982A1A1FD12E7DAA4D0" type="8" never_null="true" id="6"/>
+		<primary_key field_name="UUID" field_uuid="836B0F65D49744FC992542427E8ECFD6"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info displayable_fields_count="7">
+				<color red="237" green="211" blue="181" alpha="255"/>
+				<coordinates left="2253.76171875" top="387.09765625" width="172.75651041667" height="195.90494791667"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="ConsultationKind" uuid="B821C749D8224C62BC7045451A49A5ED" id="4">
+		<field name="UUID" uuid="C2A9750970CE48FBAFBD6930966F0D37" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="name" uuid="7D9F3605D0A0456AB353A2F0E5D97EE3" type="10" limiting_length="255" never_null="true" id="2"/>
+		<primary_key field_name="UUID" field_uuid="C2A9750970CE48FBAFBD6930966F0D37"/>
+		<table_extra trigger_insert="true" trigger_update="true" trigger_delete="true" input_form="Input" output_form="Output">
+			<editor_table_info displayable_fields_count="6">
+				<color red="181" green="145" blue="209" alpha="255"/>
+				<coordinates left="1155.08984375" top="268.796875" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="MedicalCapability" uuid="056F38B9767745A0BA070171D0477080" id="5">
+		<field name="UUID" uuid="C0A6CA65363C4CE1908BF71229BDA633" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="UUID_MedicalStaff" uuid="6A7B5C832A9645B1BE14EE5F45713BD5" type="10" store_as_UUID="true" never_null="true" id="2"/>
+		<field name="UUID_ConsultationKind" uuid="AC9E3AA5C2D64373ABE3781EDB4CC45C" type="10" store_as_UUID="true" never_null="true" id="3"/>
+		<field name="UUID_MedicalHouse" uuid="BF336980F55B42E19BBDDD050A271693" type="10" store_as_UUID="true" never_null="true" id="4"/>
+		<field name="schedule" uuid="C4276DEE540E46F4BBFFD0A43E928C3C" type="21" blob_switch_size="2147483647" never_null="true" id="5"/>
+		<primary_key field_name="UUID" field_uuid="C0A6CA65363C4CE1908BF71229BDA633"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info displayable_fields_count="6">
+				<color red="181" green="145" blue="209" alpha="255"/>
+				<coordinates left="819.06640625" top="227.13671875" width="177.85546875" height="167.62109375"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="MedicalHouse" uuid="2F03AFF6DE12476B981A1951DF30D57F" id="6">
+		<field name="UUID" uuid="21FA3FBC7DAA4D179A1C21FB54589547" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="name" uuid="E00EB266109C45A7BA72EE99C5498222" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="address" uuid="9FCAA44269E846F8868517813DDDAE65" type="21" blob_switch_size="2147483647" never_null="true" id="3"/>
+		<field name="level" uuid="569A48250AD34A5C89B39406DC4F81CF" type="3" never_null="true" id="4"/>
+		<primary_key field_name="UUID" field_uuid="21FA3FBC7DAA4D179A1C21FB54589547"/>
+		<table_extra trigger_insert="true" trigger_update="true" trigger_delete="true" input_form="Input" output_form="Output">
+			<editor_table_info displayable_fields_count="5">
+				<color red="252" green="191" blue="73" alpha="255"/>
+				<coordinates left="1155.08984375" top="488.046875" width="157.63671875" height="155.24609375"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Coach" uuid="F49905D8875F4CE8B56CBD4DC668A10B" id="7">
+		<field name="UUID" uuid="AA351F7564C24D15AF13AAE0D1F843E0" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="civility" uuid="D41A5A9356E14F139B05479C91BC4965" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="lastName" uuid="F4AE00F91C4749E4BB174DD699DB831A" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="firstName" uuid="D006A0E4CA7D4C90BDBFC7ECA3E081C0" type="10" limiting_length="255" never_null="true" id="4"/>
+		<field name="address" uuid="91D6659EBBC041CFBAEE37948AE1B01E" type="21" blob_switch_size="2147483647" never_null="true" id="5"/>
+		<field name="photo" uuid="B3C930FF475D4DC38618CE989B678D38" type="12" never_null="true" id="6"/>
+		<field name="biography" uuid="F9B50EA631DD4856B96FC8A3FF1706D5" type="10" never_null="true" id="7"/>
+		<primary_key field_name="UUID" field_uuid="AA351F7564C24D15AF13AAE0D1F843E0"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info displayable_fields_count="8">
+				<color red="168" green="206" blue="226" alpha="255"/>
+				<coordinates left="520.81640625" top="720.2421875" width="156.54296875" height="210.9921875"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="LessonCapability" uuid="C836CA733F264A62966147189A49D373" id="8">
+		<field name="UUID" uuid="E945C0575C7D4C599FA96A3BBC504D91" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="UUID_Coach" uuid="BC5CF192EA21417BA6452D9C7A803A90" type="10" store_as_UUID="true" never_null="true" id="2"/>
+		<field name="UUID_Activity" uuid="32B059CBC241421D905DFFC93962494D" type="10" store_as_UUID="true" never_null="true" id="3"/>
+		<field name="UUID_MedicalHouse" uuid="7DC69B5176DC44A79EDC52E418785F74" type="10" store_as_UUID="true" never_null="true" id="4"/>
+		<field name="schedule" uuid="215B8CA42D7243B09CED1C1D4D218E9F" type="21" blob_switch_size="2147483647" never_null="true" id="5"/>
+		<primary_key field_name="UUID" field_uuid="E945C0575C7D4C599FA96A3BBC504D91"/>
+		<table_extra input_form="Entrée" output_form="Sortie">
+			<editor_table_info displayable_fields_count="6">
+				<color red="181" green="145" blue="209" alpha="255"/>
+				<coordinates left="812.3125" top="822.1796875" width="177.85546875" height="167.62109375"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Activity" uuid="38CF13046EE546DF94BB8D180261B8A2" id="9">
+		<field name="UUID" uuid="024909D017A94FC9B1BF373393BD6D87" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="name" uuid="BF59AD971F5544B096E0CA06DDDBADEA" type="10" limiting_length="255" never_null="true" id="2"/>
+		<primary_key field_name="UUID" field_uuid="024909D017A94FC9B1BF373393BD6D87"/>
+		<table_extra trigger_insert="true" trigger_delete="true" trigger_update="true" input_form="Input" output_form="Output">
+			<editor_table_info displayable_fields_count="6">
+				<color red="181" green="145" blue="209" alpha="255"/>
+				<coordinates left="1173.22265625" top="863.828125" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="PrivateLesson" uuid="005E8CE819EC4F4E9A194F2F56B94E54" id="10">
+		<field name="UUID" uuid="AA8A5DAAB8984774AC239122C90E4175" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="UUID_Coach" uuid="261FDA64700C415D9A48DB2FE8DB340A" type="10" store_as_UUID="true" never_null="true" id="2"/>
+		<field name="UUID_Person" uuid="46DC8E1A357C4C82B6890BEE6C669DE9" type="10" store_as_UUID="true" never_null="true" id="3">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="UUID_Activity" uuid="1969DD3CC5204F69804BCA07572733EB" type="10" store_as_UUID="true" never_null="true" id="4"/>
+		<field name="UUID_MedicalHouse" uuid="FF90D23D3C3A42E3BA6E4D3424C37F5C" type="10" store_as_UUID="true" never_null="true" id="5"/>
+		<field name="startStmp" uuid="5CD5F02D5FFF4B86940B7D1779AD78D5" type="4" never_null="true" id="6"/>
+		<field name="duration" uuid="4C79DA9052AA4187B828D8C77A009312" type="4" never_null="true" id="7"/>
+		<field name="idStatus" uuid="793C31F2BFB943518B943B80362367A0" type="3" never_null="true" id="8"/>
+		<field name="chronoStatus" uuid="F7C98809ED964AC495FC8799BFE3538E" type="21" blob_switch_size="2147483647" never_null="true" id="9"/>
+		<primary_key field_name="UUID" field_uuid="AA8A5DAAB8984774AC239122C90E4175"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info displayable_fields_count="9">
+				<color red="150" green="216" blue="175" alpha="255"/>
+				<coordinates left="1510.390625" top="699.2421875" width="202.99609375" height="242.6953125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="GroupLesson" uuid="BE6553CFA7A54189B9DB11633308A95E" id="11">
+		<field name="UUID" uuid="02FD6803D8334A228ABFE7A746165016" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="UUID_Coach" uuid="25394317E119433B8FE5E7CBCF8EBACB" type="10" store_as_UUID="true" never_null="true" id="2"/>
+		<field name="UUID_Group" uuid="9D67921F4D344070BB360619AAE25AB6" type="10" store_as_UUID="true" never_null="true" id="3">
+			<field_extra multi_line="false"/>
+		</field>
+		<field name="UUID_Activity" uuid="58EF9A9E10F141F6A0A42806ECD1C73E" type="10" store_as_UUID="true" never_null="true" id="4"/>
+		<field name="UUID_MedicalHouse" uuid="B35A6A21851D4609970FA2D83D8577C9" type="10" store_as_UUID="true" never_null="true" id="5"/>
+		<field name="startStmp" uuid="58F1925CD2FE4E7B97001F8C9ACBB709" type="4" never_null="true" id="6"/>
+		<field name="duration" uuid="D029F310C60645C7BBD5F2F21504F0BF" type="4" never_null="true" id="7"/>
+		<field name="idStatus" uuid="DEE1BE2E459247039EFC983670AA4124" type="3" never_null="true" id="8"/>
+		<field name="chronoStatus" uuid="36BC0BEF133540B4BF4FB3754F1C47A2" type="21" blob_switch_size="2147483647" never_null="true" id="9"/>
+		<primary_key field_name="UUID" field_uuid="02FD6803D8334A228ABFE7A746165016"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info fields_ordering="1" displayable_fields_count="9">
+				<color red="196" green="193" blue="186" alpha="255"/>
+				<coordinates left="1508.80078125" top="998.83984375" width="196.61328125" height="248.08203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Group" uuid="2B7EB434E54345CDA6FE096B21FEB0AD" id="12">
+		<field name="UUID" uuid="CA2AD3E4E6C247879C2E7FC26134F5BF" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="name" uuid="2427904EF3704B8AA3C599C14EA7E867" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="maxMembers" uuid="7727E001A2974C7F8DCF932375300203" type="3" never_null="true" id="3"/>
+		<primary_key field_name="UUID" field_uuid="CA2AD3E4E6C247879C2E7FC26134F5BF"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info displayable_fields_count="6">
+				<color red="237" green="211" blue="181" alpha="255"/>
+				<coordinates left="1819.33203125" top="1040.984375" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="GroupMember" uuid="E5D20EAB0C2941168A6D18F0262592C6" id="13">
+		<field name="UUID" uuid="2CC94AA4938E4A3A88DDE3BCFBD08FD1" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="UUID_Group" uuid="82EED2EFA7324563A406874D683ED9EF" type="10" store_as_UUID="true" never_null="true" id="2"/>
+		<field name="UUID_Person" uuid="E648487CB771435AA29C819E57C7038C" type="10" store_as_UUID="true" never_null="true" id="3">
+			<field_extra multi_line="false">
+				<editor_field_info>
+					<color red="255" green="255" blue="255" alpha="0"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="startDate" uuid="12079DE5B31A421DA998B2663990B3E4" type="8" never_null="true" id="4"/>
+		<field name="endDate" uuid="C34B0A674A5645AE90CDF7B037746F2F" type="8" never_null="true" id="5"/>
+		<primary_key field_name="UUID" field_uuid="2CC94AA4938E4A3A88DDE3BCFBD08FD1"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info displayable_fields_count="6">
+				<color red="237" green="211" blue="181" alpha="255"/>
+				<coordinates left="2006.9296875" top="1019.84375" width="140.14453125" height="178.36328125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Attendee" uuid="7D3E3E827C4A4AEA89771EEEC30BF9CA" id="14">
+		<field name="UUID" uuid="CD366324BE2D4D56891AAAA3AB9C1F9A" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="UUID_GroupLesson" uuid="1E6C3739C9BC42F3945491F17700F073" type="10" store_as_UUID="true" never_null="true" id="2"/>
+		<field name="UUID_Person" uuid="EE25B616774B48BEA08DB9CF68D8C04A" type="10" store_as_UUID="true" never_null="true" id="3">
+			<field_extra multi_line="false">
+				<editor_field_info>
+					<color red="255" green="255" blue="255" alpha="0"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<primary_key field_name="UUID" field_uuid="CD366324BE2D4D56891AAAA3AB9C1F9A"/>
+		<table_extra input_form="Entrée" output_form="Sortie">
+			<editor_table_info displayable_fields_count="6">
+				<color red="196" green="193" blue="186" alpha="255"/>
+				<coordinates left="1170.73046875" top="1093.4140625" width="175.8203125" height="169.77734375"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="sfw_Country" uuid="4C0E0D9D33D246BAB1FACEEC19ABF144" id="15" prevent_journaling="true">
+		<field name="UUID" uuid="FDA14E8A26704F7091EC668E332108FB" type="10" unique="true" autogenerate="true" store_as_UUID="true" id="1"/>
+		<field name="name" uuid="FEDEAAD3F9A64D8AA7049B2EA9699D2C" type="10" limiting_length="255" id="2"/>
+		<field name="capitalCity" uuid="3846571AC9194755B77026D3B09FC111" type="10" limiting_length="255" id="3"/>
+		<field name="iso_code_2" uuid="D94E3A24A7814028BC889E15191D02CF" type="10" limiting_length="255" id="4"/>
+		<field name="iso_code_3" uuid="50EB5F1325AC43958C76D9AB1B3F4218" type="10" limiting_length="255" id="5"/>
+		<field name="flag" uuid="AE79D975793F453E955E4B3D5BA85330" type="12" id="6"/>
+		<field name="address_format" uuid="BE9E6B8DD3DF4918B10EF7F888B149CB" type="21" id="7"/>
+		<primary_key field_name="UUID" field_uuid="FDA14E8A26704F7091EC668E332108FB"/>
+		<table_extra trigger_insert="true" trigger_update="true" trigger_delete="true" input_form="Entrée" output_form="Sortie">
+			<editor_table_info fields_ordering="1" displayable_fields_count="8">
+				<color red="237" green="211" blue="181" alpha="255"/>
+				<coordinates left="32.87890625" top="39.56640625" width="194.23046875" height="212.31640625"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="(Table_1)" uuid="6156419AFD41487DBAA331A7A2B03CFD" id="16" hide_in_REST="true">
+		<field name="UUID" uuid="A499BE91034D48729B0FACAB420ECB7C" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<primary_key field_name="UUID" field_uuid="A499BE91034D48729B0FACAB420ECB7C"/>
+		<table_extra trashed="true">
+			<editor_table_info fields_ordering="1" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="240" top="40" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<relation uuid="7C31B0E52D9B43A0A8B5591EC3FE2666" name_Nto1="medicalStaff" name_1toN="medicalCapabilities" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1" integrity="delete">
+		<related_field kind="source">
+			<field_ref uuid="6A7B5C832A9645B1BE14EE5F45713BD5" name="UUID_MedicalStaff">
+				<table_ref uuid="056F38B9767745A0BA070171D0477080" name="MedicalCapability"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="7E925CCCAF1B49E6B699B780BF5F6DF3" name="UUID">
+				<table_ref uuid="B34F0CBCE1D747BFB6DBD4C6CA4E8358" name="MedicalStaff"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="2E135FFDDA0C49CA9E012FBD209CD6A4" name_Nto1="consultationKind" name_1toN="medicalCapabilities" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="AC9E3AA5C2D64373ABE3781EDB4CC45C" name="UUID_ConsultationKind">
+				<table_ref uuid="056F38B9767745A0BA070171D0477080" name="MedicalCapability"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="C2A9750970CE48FBAFBD6930966F0D37" name="UUID">
+				<table_ref uuid="B821C749D8224C62BC7045451A49A5ED" name="ConsultationKind"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="5700C5191D5A47FEBDA0BA58DF5DD8A0" name_Nto1="medicalHouse" name_1toN="medicalCapabilities" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="BF336980F55B42E19BBDDD050A271693" name="UUID_MedicalHouse">
+				<table_ref uuid="056F38B9767745A0BA070171D0477080" name="MedicalCapability"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="21FA3FBC7DAA4D179A1C21FB54589547" name="UUID">
+				<table_ref uuid="2F03AFF6DE12476B981A1951DF30D57F" name="MedicalHouse"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="149033DDD8334DC294C3E008AB1B844B" name_Nto1="medicalStaff" name_1toN="appointments" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="D4E9BDE4B73B4CF8A7F48BC44703F85F" name="UUID_MedicalStaff">
+				<table_ref uuid="D035FD2FB7BB480FA8A8CB77EF2CE8C7" name="Appointment"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="7E925CCCAF1B49E6B699B780BF5F6DF3" name="UUID">
+				<table_ref uuid="B34F0CBCE1D747BFB6DBD4C6CA4E8358" name="MedicalStaff"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="09B14A52845C4556941CFF5994483E00" name_Nto1="person" name_1toN="appointments" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="A495137DED684BFD96200A432E8BBC4A" name="UUID_Person">
+				<table_ref uuid="D035FD2FB7BB480FA8A8CB77EF2CE8C7" name="Appointment"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="836B0F65D49744FC992542427E8ECFD6" name="UUID">
+				<table_ref uuid="FCDA3BD7C1D145AC84082F53EF9D32C3" name="Person"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="E70DF341C5E04330BD87F6BA7AFC7086" name_Nto1="consultationKind" name_1toN="appointments" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="1848B888C7A34F29827C7867086133A3" name="UUID_ConsultationKind">
+				<table_ref uuid="D035FD2FB7BB480FA8A8CB77EF2CE8C7" name="Appointment"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="C2A9750970CE48FBAFBD6930966F0D37" name="UUID">
+				<table_ref uuid="B821C749D8224C62BC7045451A49A5ED" name="ConsultationKind"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="C81CC4DA066B4647BA94ADFE4132B4FD" name_Nto1="medicalHouse" name_1toN="appointment" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="C074C1A0A3BE4A8886FC7A9AA07DB6EE" name="UUID_MedicalHouse">
+				<table_ref uuid="D035FD2FB7BB480FA8A8CB77EF2CE8C7" name="Appointment"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="21FA3FBC7DAA4D179A1C21FB54589547" name="UUID">
+				<table_ref uuid="2F03AFF6DE12476B981A1951DF30D57F" name="MedicalHouse"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="5AF66C84173E41399F6AB81DD021DF97" name_Nto1="coach" name_1toN="privateLessons" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="261FDA64700C415D9A48DB2FE8DB340A" name="UUID_Coach">
+				<table_ref uuid="005E8CE819EC4F4E9A194F2F56B94E54" name="PrivateLesson"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="AA351F7564C24D15AF13AAE0D1F843E0" name="UUID">
+				<table_ref uuid="F49905D8875F4CE8B56CBD4DC668A10B" name="Coach"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="1AC984D8A76B4E8F87CE2FB7E935FBB5" name_Nto1="person" name_1toN="privateLessons" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="46DC8E1A357C4C82B6890BEE6C669DE9" name="UUID_Person">
+				<table_ref uuid="005E8CE819EC4F4E9A194F2F56B94E54" name="PrivateLesson"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="836B0F65D49744FC992542427E8ECFD6" name="UUID">
+				<table_ref uuid="FCDA3BD7C1D145AC84082F53EF9D32C3" name="Person"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="D5DF3EBBBF7142B98E23A42C4C35085B" name_Nto1="activity" name_1toN="privateLessons" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="1969DD3CC5204F69804BCA07572733EB" name="UUID_Activity">
+				<table_ref uuid="005E8CE819EC4F4E9A194F2F56B94E54" name="PrivateLesson"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="024909D017A94FC9B1BF373393BD6D87" name="UUID">
+				<table_ref uuid="38CF13046EE546DF94BB8D180261B8A2" name="Activity"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="16F321E3953A41FFB496489DD432048E" name_Nto1="medicalHouse" name_1toN="privateLessons" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="FF90D23D3C3A42E3BA6E4D3424C37F5C" name="UUID_MedicalHouse">
+				<table_ref uuid="005E8CE819EC4F4E9A194F2F56B94E54" name="PrivateLesson"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="21FA3FBC7DAA4D179A1C21FB54589547" name="UUID">
+				<table_ref uuid="2F03AFF6DE12476B981A1951DF30D57F" name="MedicalHouse"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="E21AFE37C6534E0582DC0660C1E0E69F" name_Nto1="coach" name_1toN="lessonCapabilities" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="BC5CF192EA21417BA6452D9C7A803A90" name="UUID_Coach">
+				<table_ref uuid="C836CA733F264A62966147189A49D373" name="LessonCapability"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="AA351F7564C24D15AF13AAE0D1F843E0" name="UUID">
+				<table_ref uuid="F49905D8875F4CE8B56CBD4DC668A10B" name="Coach"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="E1FE109CD43C421697250F30C0F4BEB6" name_Nto1="activity" name_1toN="lessonCapabilities" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="32B059CBC241421D905DFFC93962494D" name="UUID_Activity">
+				<table_ref uuid="C836CA733F264A62966147189A49D373" name="LessonCapability"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="024909D017A94FC9B1BF373393BD6D87" name="UUID">
+				<table_ref uuid="38CF13046EE546DF94BB8D180261B8A2" name="Activity"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="28B6C6A2E9644C90947D5CEB95AB80B0" name_Nto1="medicalHouse" name_1toN="lessonCapabilities" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="7DC69B5176DC44A79EDC52E418785F74" name="UUID_MedicalHouse">
+				<table_ref uuid="C836CA733F264A62966147189A49D373" name="LessonCapability"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="21FA3FBC7DAA4D179A1C21FB54589547" name="UUID">
+				<table_ref uuid="2F03AFF6DE12476B981A1951DF30D57F" name="MedicalHouse"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="A17CDDD59F93495FB7A7A61024A2ED8E" name_Nto1="groupLesson" name_1toN="attendees" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="1E6C3739C9BC42F3945491F17700F073" name="UUID_GroupLesson">
+				<table_ref uuid="7D3E3E827C4A4AEA89771EEEC30BF9CA" name="Attendee"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="02FD6803D8334A228ABFE7A746165016" name="UUID">
+				<table_ref uuid="BE6553CFA7A54189B9DB11633308A95E" name="GroupLesson"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="D0B7F8B378A44F339A926E11F216700A" name_Nto1="person" name_1toN="attendees" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="EE25B616774B48BEA08DB9CF68D8C04A" name="UUID_Person">
+				<table_ref uuid="7D3E3E827C4A4AEA89771EEEC30BF9CA" name="Attendee"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="836B0F65D49744FC992542427E8ECFD6" name="UUID">
+				<table_ref uuid="FCDA3BD7C1D145AC84082F53EF9D32C3" name="Person"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="EDC697CB5394418092B205A5176637E7" name_Nto1="coach" name_1toN="groupLessons" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="25394317E119433B8FE5E7CBCF8EBACB" name="UUID_Coach">
+				<table_ref uuid="BE6553CFA7A54189B9DB11633308A95E" name="GroupLesson"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="AA351F7564C24D15AF13AAE0D1F843E0" name="UUID">
+				<table_ref uuid="F49905D8875F4CE8B56CBD4DC668A10B" name="Coach"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="AA7FA9707A2B4250AC70BF71D16D138C" name_Nto1="group" name_1toN="groupLessons" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="9D67921F4D344070BB360619AAE25AB6" name="UUID_Group">
+				<table_ref uuid="BE6553CFA7A54189B9DB11633308A95E" name="GroupLesson"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="CA2AD3E4E6C247879C2E7FC26134F5BF" name="UUID">
+				<table_ref uuid="2B7EB434E54345CDA6FE096B21FEB0AD" name="Group"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="0B9C5838072746DCB0947B3B1FA276A2" name_Nto1="activity" name_1toN="groupLessons" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="58EF9A9E10F141F6A0A42806ECD1C73E" name="UUID_Activity">
+				<table_ref uuid="BE6553CFA7A54189B9DB11633308A95E" name="GroupLesson"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="024909D017A94FC9B1BF373393BD6D87" name="UUID">
+				<table_ref uuid="38CF13046EE546DF94BB8D180261B8A2" name="Activity"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="A417D471F4B84E258A128FE19F0A7E89" name_Nto1="medicalHouse" name_1toN="groupLessons" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="B35A6A21851D4609970FA2D83D8577C9" name="UUID_MedicalHouse">
+				<table_ref uuid="BE6553CFA7A54189B9DB11633308A95E" name="GroupLesson"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="21FA3FBC7DAA4D179A1C21FB54589547" name="UUID">
+				<table_ref uuid="2F03AFF6DE12476B981A1951DF30D57F" name="MedicalHouse"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="B71B27EF5D0B4D52BAAE391D851B1150" name_Nto1="group" name_1toN="groupMembers" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="82EED2EFA7324563A406874D683ED9EF" name="UUID_Group">
+				<table_ref uuid="E5D20EAB0C2941168A6D18F0262592C6" name="GroupMember"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="CA2AD3E4E6C247879C2E7FC26134F5BF" name="UUID">
+				<table_ref uuid="2B7EB434E54345CDA6FE096B21FEB0AD" name="Group"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="2D94418000E44666B5E6E5EC7407EFAD" name_Nto1="person" name_1toN="groupMembers" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="E648487CB771435AA29C819E57C7038C" name="UUID_Person">
+				<table_ref uuid="E5D20EAB0C2941168A6D18F0262592C6" name="GroupMember"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="836B0F65D49744FC992542427E8ECFD6" name="UUID">
+				<table_ref uuid="FCDA3BD7C1D145AC84082F53EF9D32C3" name="Person"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<index kind="regular" uuid="02FEF46CF0C240409FAC50071084D862" type="3">
+		<field_ref uuid="1E6C3739C9BC42F3945491F17700F073" name="UUID_GroupLesson">
+			<table_ref uuid="7D3E3E827C4A4AEA89771EEEC30BF9CA" name="Attendee"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="0BC22C427E644BA9BEE340CFEAFA9D21" type="1">
+		<field_ref uuid="C0A6CA65363C4CE1908BF71229BDA633" name="UUID">
+			<table_ref uuid="056F38B9767745A0BA070171D0477080" name="MedicalCapability"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="1926FFDA1E4D450DB00E97A61505F7C7" type="1">
+		<field_ref uuid="E5BB608CA24D43A2A51CCEEBD73A3ACD" name="UUID">
+			<table_ref uuid="D035FD2FB7BB480FA8A8CB77EF2CE8C7" name="Appointment"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="1B0870C257594C0A9285AA1435D1CF04" type="3">
+		<field_ref uuid="6A7B5C832A9645B1BE14EE5F45713BD5" name="UUID_MedicalStaff">
+			<table_ref uuid="056F38B9767745A0BA070171D0477080" name="MedicalCapability"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="24051FB0CE34417993D4A7FCD4A37F09" type="3">
+		<field_ref uuid="AC9E3AA5C2D64373ABE3781EDB4CC45C" name="UUID_ConsultationKind">
+			<table_ref uuid="056F38B9767745A0BA070171D0477080" name="MedicalCapability"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="3388DB42D338486A8C862BA8916851A0" type="3">
+		<field_ref uuid="FF90D23D3C3A42E3BA6E4D3424C37F5C" name="UUID_MedicalHouse">
+			<table_ref uuid="005E8CE819EC4F4E9A194F2F56B94E54" name="PrivateLesson"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="3A7625BEDA8048C799849A1ADF3A900E" type="1">
+		<field_ref uuid="2CC94AA4938E4A3A88DDE3BCFBD08FD1" name="UUID">
+			<table_ref uuid="E5D20EAB0C2941168A6D18F0262592C6" name="GroupMember"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="3F993EB7A0174AC4849FD4DDC82CFE3E" type="7">
+		<field_ref uuid="A499BE91034D48729B0FACAB420ECB7C" name="UUID">
+			<table_ref uuid="6156419AFD41487DBAA331A7A2B03CFD" name="(Table_1)"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="41018F6F08B14053B8E52047DCECF3D8" type="3">
+		<field_ref uuid="E648487CB771435AA29C819E57C7038C" name="UUID_Person">
+			<table_ref uuid="E5D20EAB0C2941168A6D18F0262592C6" name="GroupMember"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="4124BAE524BF484B9EBFD53D4EB87E7F" type="3">
+		<field_ref uuid="46DC8E1A357C4C82B6890BEE6C669DE9" name="UUID_Person">
+			<table_ref uuid="005E8CE819EC4F4E9A194F2F56B94E54" name="PrivateLesson"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="4E6E3A7EE87C4A34921C6D7360E4E588" type="3">
+		<field_ref uuid="A495137DED684BFD96200A432E8BBC4A" name="UUID_Person">
+			<table_ref uuid="D035FD2FB7BB480FA8A8CB77EF2CE8C7" name="Appointment"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="50753680626F4B5EA180B3C7EEAF873C" type="3">
+		<field_ref uuid="B35A6A21851D4609970FA2D83D8577C9" name="UUID_MedicalHouse">
+			<table_ref uuid="BE6553CFA7A54189B9DB11633308A95E" name="GroupLesson"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="540E25534E314DAEB51D8A927BC71D91" type="1">
+		<field_ref uuid="7E925CCCAF1B49E6B699B780BF5F6DF3" name="UUID">
+			<table_ref uuid="B34F0CBCE1D747BFB6DBD4C6CA4E8358" name="MedicalStaff"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="6AC37978351B426EB39A9B6B446F3718" type="1">
+		<field_ref uuid="21FA3FBC7DAA4D179A1C21FB54589547" name="UUID">
+			<table_ref uuid="2F03AFF6DE12476B981A1951DF30D57F" name="MedicalHouse"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="6BA1924EF2F74620A34965DF8C5A42FC" type="3">
+		<field_ref uuid="7DC69B5176DC44A79EDC52E418785F74" name="UUID_MedicalHouse">
+			<table_ref uuid="C836CA733F264A62966147189A49D373" name="LessonCapability"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="6DB7E8DE778C4A109E36AC85040C2108" type="3">
+		<field_ref uuid="BF336980F55B42E19BBDDD050A271693" name="UUID_MedicalHouse">
+			<table_ref uuid="056F38B9767745A0BA070171D0477080" name="MedicalCapability"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="75508F41108444828F8C8EDD98870CCC" type="1">
+		<field_ref uuid="CA2AD3E4E6C247879C2E7FC26134F5BF" name="UUID">
+			<table_ref uuid="2B7EB434E54345CDA6FE096B21FEB0AD" name="Group"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="8813ADE663304C35842DBB18C85885CE" type="1">
+		<field_ref uuid="CD366324BE2D4D56891AAAA3AB9C1F9A" name="UUID">
+			<table_ref uuid="7D3E3E827C4A4AEA89771EEEC30BF9CA" name="Attendee"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="88BC7325EB444BA0AF7E7644EDCDC32E" type="3">
+		<field_ref uuid="1969DD3CC5204F69804BCA07572733EB" name="UUID_Activity">
+			<table_ref uuid="005E8CE819EC4F4E9A194F2F56B94E54" name="PrivateLesson"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="8E6F06CB0A694E419E31F047472E3820" type="3">
+		<field_ref uuid="C074C1A0A3BE4A8886FC7A9AA07DB6EE" name="UUID_MedicalHouse">
+			<table_ref uuid="D035FD2FB7BB480FA8A8CB77EF2CE8C7" name="Appointment"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="9548719282A24AD38778BD85E3229483" type="1">
+		<field_ref uuid="836B0F65D49744FC992542427E8ECFD6" name="UUID">
+			<table_ref uuid="FCDA3BD7C1D145AC84082F53EF9D32C3" name="Person"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="9CA2BC4FD25945CCB5E99121F0F8D71D" type="1">
+		<field_ref uuid="C2A9750970CE48FBAFBD6930966F0D37" name="UUID">
+			<table_ref uuid="B821C749D8224C62BC7045451A49A5ED" name="ConsultationKind"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="A6C28099DB404BFF801B194FFF82142A" type="3">
+		<field_ref uuid="EE25B616774B48BEA08DB9CF68D8C04A" name="UUID_Person">
+			<table_ref uuid="7D3E3E827C4A4AEA89771EEEC30BF9CA" name="Attendee"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="AC01DB70F9D84EDB9B477CAEFC3F8052" type="3">
+		<field_ref uuid="D4E9BDE4B73B4CF8A7F48BC44703F85F" name="UUID_MedicalStaff">
+			<table_ref uuid="D035FD2FB7BB480FA8A8CB77EF2CE8C7" name="Appointment"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="B1A7C6729DC2431CADE14CE78A4E353B" type="3">
+		<field_ref uuid="82EED2EFA7324563A406874D683ED9EF" name="UUID_Group">
+			<table_ref uuid="E5D20EAB0C2941168A6D18F0262592C6" name="GroupMember"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="B50A637424C34B26BB1AF1F315F7A5DD" type="3">
+		<field_ref uuid="1848B888C7A34F29827C7867086133A3" name="UUID_ConsultationKind">
+			<table_ref uuid="D035FD2FB7BB480FA8A8CB77EF2CE8C7" name="Appointment"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="B5661A9EEB6744D1931DB372B51074A8" type="3">
+		<field_ref uuid="9D67921F4D344070BB360619AAE25AB6" name="UUID_Group">
+			<table_ref uuid="BE6553CFA7A54189B9DB11633308A95E" name="GroupLesson"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="BC0BA13CCE654136AF4A86A6E2E2A582" type="1">
+		<field_ref uuid="024909D017A94FC9B1BF373393BD6D87" name="UUID">
+			<table_ref uuid="38CF13046EE546DF94BB8D180261B8A2" name="Activity"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="C56582DB4B7F4D27A70881DF6ED70713" type="3">
+		<field_ref uuid="58EF9A9E10F141F6A0A42806ECD1C73E" name="UUID_Activity">
+			<table_ref uuid="BE6553CFA7A54189B9DB11633308A95E" name="GroupLesson"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="C5FFF2AF8A304F12BB3A01A9C5612428" type="3">
+		<field_ref uuid="25394317E119433B8FE5E7CBCF8EBACB" name="UUID_Coach">
+			<table_ref uuid="BE6553CFA7A54189B9DB11633308A95E" name="GroupLesson"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="C6A1A390929F4F8CA6A5A1BC6FBF9302" type="1">
+		<field_ref uuid="FDA14E8A26704F7091EC668E332108FB" name="UUID">
+			<table_ref uuid="4C0E0D9D33D246BAB1FACEEC19ABF144" name="sfw_Country"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="CCA2ABD67B174749BA88A89BB1F97352" type="1">
+		<field_ref uuid="AA351F7564C24D15AF13AAE0D1F843E0" name="UUID">
+			<table_ref uuid="F49905D8875F4CE8B56CBD4DC668A10B" name="Coach"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="D032F726D92144DF8490B3805D296B3A" type="1">
+		<field_ref uuid="AA8A5DAAB8984774AC239122C90E4175" name="UUID">
+			<table_ref uuid="005E8CE819EC4F4E9A194F2F56B94E54" name="PrivateLesson"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="DD938C820EE94701B6271E70ACCA1C55" type="3">
+		<field_ref uuid="BC5CF192EA21417BA6452D9C7A803A90" name="UUID_Coach">
+			<table_ref uuid="C836CA733F264A62966147189A49D373" name="LessonCapability"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="DDF45F5253684C0AB3D6C33DCDB9247A" type="1">
+		<field_ref uuid="E945C0575C7D4C599FA96A3BBC504D91" name="UUID">
+			<table_ref uuid="C836CA733F264A62966147189A49D373" name="LessonCapability"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="F57871E88CBA47249AE7D4B0D76E979E" type="1">
+		<field_ref uuid="02FD6803D8334A228ABFE7A746165016" name="UUID">
+			<table_ref uuid="BE6553CFA7A54189B9DB11633308A95E" name="GroupLesson"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="F71D5BE568C74A2F9AED185C1FF51835" type="3">
+		<field_ref uuid="32B059CBC241421D905DFFC93962494D" name="UUID_Activity">
+			<table_ref uuid="C836CA733F264A62966147189A49D373" name="LessonCapability"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="F74EE7EB86254440A6E0E147FA41C8D3" type="3">
+		<field_ref uuid="261FDA64700C415D9A48DB2FE8DB340A" name="UUID_Coach">
+			<table_ref uuid="005E8CE819EC4F4E9A194F2F56B94E54" name="PrivateLesson"/>
+		</field_ref>
+	</index>
+	<base_extra __stringCompHash="icu:68.1.0" __keywordBuildingHash="icu:68.1.0" data_file_path=":HWMH.4DD"/>
+</base>

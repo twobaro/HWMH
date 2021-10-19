@@ -1,0 +1,411 @@
+﻿{
+	"destination": "detailScreen",
+	"windowMinWidth": 1000,
+	"windowMinHeight": 600,
+	"formSizeAnchor": "bkgd_bottomBar",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"menuBar": "Barre #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onCloseBox",
+		"onResize"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"bkgd_topBar": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1280,
+					"height": 60,
+					"sizingX": "grow",
+					"fill": "#A6C1D5",
+					"stroke": "transparent"
+				},
+				"bkgd_bottomBar": {
+					"type": "rectangle",
+					"top": 620,
+					"left": 0,
+					"width": 1280,
+					"height": 60,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"fill": "#C0C0C0",
+					"stroke": "transparent"
+				},
+				"Ligne": {
+					"type": "line",
+					"top": 0,
+					"left": 424,
+					"height": 740,
+					"sizingY": "grow",
+					"stroke": "#C0C0C0",
+					"strokeWidth": 0.1
+				}
+			}
+		},
+		{
+			"objects": {
+				"lb_items": {
+					"type": "listbox",
+					"top": 60,
+					"left": 0,
+					"width": 424,
+					"height": 559,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"dataSource": "Form:C1466.lb_items",
+					"currentItemSource": "Form:C1466.current_lb_item",
+					"currentItemPositionSource": "Form:C1466.current_lb_item_pos",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "automatic",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "#F5F5F5",
+					"alternateFill": "#FAFAFA",
+					"borderStyle": "none",
+					"method": "ObjectMethods/lb_items.4dm",
+					"events": [
+						"onClick",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": []
+				},
+				"detail_panel": {
+					"type": "subform",
+					"top": 60,
+					"left": 426,
+					"width": 854,
+					"height": 560,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Form:C1466.subForm",
+					"detailForm": "sfw_default_panel",
+					"hideFocusRing": true,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable"
+				},
+				"searchbox_roundRectangle": {
+					"type": "rectangle",
+					"top": 14,
+					"left": 206,
+					"width": 215,
+					"height": 36,
+					"sizingX": "move",
+					"stroke": "#60A9EF",
+					"strokeWidth": 3,
+					"borderRadius": 16
+				},
+				"searchbox_icon": {
+					"type": "picture",
+					"top": 21,
+					"left": 216,
+					"width": 24,
+					"height": 24,
+					"sizingX": "move",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/image/logo/loupe.png"
+				},
+				"bIcon_entry": {
+					"type": "button",
+					"top": 5,
+					"left": 5,
+					"width": 50,
+					"height": 50,
+					"focusable": false,
+					"icon": "/RESOURCES/image/entry/doctor-50x50.png",
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"entry_label": {
+					"type": "input",
+					"top": 24,
+					"left": 66,
+					"width": 130,
+					"height": 17,
+					"sizingX": "grow",
+					"dataSource": "sfw_xliff_read(Form:C1466.entry.xliff; Form:C1466.entry.label)",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"searchbox_variable": {
+					"type": "input",
+					"top": 24,
+					"left": 250,
+					"width": 142,
+					"height": 17,
+					"sizingX": "move",
+					"dataSource": "Form:C1466.searchbox",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"placeholder": ":xliff:search.localSearch",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/searchbox_variable.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"vSplitter": {
+					"type": "button",
+					"top": 0,
+					"left": 424,
+					"width": 2,
+					"height": 742,
+					"sizingY": "grow",
+					"action": "automaticSplitter",
+					"display": false,
+					"method": "ObjectMethods/vSplitter.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte": {
+					"type": "text",
+					"top": 693,
+					"left": 0,
+					"width": 334,
+					"height": 17,
+					"sizingY": "move",
+					"fill": "#FFFF00",
+					"textAlign": "center",
+					"text": "Physical stopper"
+				},
+				"lb_items_counter": {
+					"type": "input",
+					"top": 626,
+					"left": 259,
+					"width": 162,
+					"height": 14,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Form:C1466.lb_items.length",
+					"dataSourceTypeHint": "number",
+					"stroke": "#FFFFFF",
+					"textAlign": "right",
+					"fontFamily": "System Font Regular",
+					"fontSize": 11,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "###,###,##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"searchbox_cross": {
+					"type": "button",
+					"top": 23,
+					"left": 395,
+					"width": 17,
+					"height": 18,
+					"sizingX": "move",
+					"fontWeight": "bold",
+					"stroke": "#FF0000",
+					"focusable": false,
+					"text": "X",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/searchbox_cross.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 693,
+					"left": 664,
+					"width": 536,
+					"height": 17,
+					"sizingX": "move",
+					"sizingY": "move",
+					"fill": "#FFFF00",
+					"textAlign": "center",
+					"text": "Physical stopper"
+				},
+				"bAction": {
+					"type": "button",
+					"top": 635,
+					"left": 10,
+					"width": 32,
+					"height": 32,
+					"sizingY": "move",
+					"focusable": false,
+					"icon": "/RESOURCES/image/skin/rainbow/btn4states/action-32x32.png",
+					"iconFrames": 4,
+					"popupPlacement": "linked",
+					"textPlacement": "left",
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"bItemCancel": {
+					"type": "button",
+					"top": 634,
+					"left": 537,
+					"width": 100,
+					"height": 32,
+					"sizingY": "move",
+					"focusable": false,
+					"text": ":xliff:button.cancel",
+					"icon": "/RESOURCES/image/skin/rainbow/btn4states/cancel-32x32.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "custom",
+					"method": "ObjectMethods/bItemCancel.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bItemSave": {
+					"type": "button",
+					"top": 635,
+					"left": 648,
+					"width": 100,
+					"height": 32,
+					"sizingY": "move",
+					"focusable": false,
+					"text": ":xliff:button.accept",
+					"icon": "/RESOURCES/image/skin/rainbow/btn4states/save-32x32.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "custom",
+					"method": "ObjectMethods/bItemSave.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bMode": {
+					"type": "button",
+					"top": 635,
+					"left": 437,
+					"width": 89,
+					"height": 32,
+					"sizingY": "move",
+					"focusable": false,
+					"text": "Modify",
+					"icon": "/RESOURCES/image/skin/rainbow/btn4states/edit-32x32.png",
+					"iconFrames": 4,
+					"popupPlacement": "linked",
+					"textPlacement": "right",
+					"style": "custom",
+					"method": "ObjectMethods/bMode.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bItemCreate": {
+					"type": "button",
+					"top": 635,
+					"left": 871,
+					"width": 100,
+					"height": 32,
+					"sizingY": "move",
+					"focusable": false,
+					"text": ":xliff:button.create",
+					"icon": "/RESOURCES/image/skin/rainbow/btn4states/save-32x32.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "custom",
+					"method": "ObjectMethods/bItemCreate.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bItemDelete": {
+					"type": "button",
+					"top": 635,
+					"left": 983,
+					"width": 100,
+					"height": 32,
+					"sizingY": "move",
+					"focusable": false,
+					"text": ":xliff:button.delete",
+					"icon": "/RESOURCES/image/skin/rainbow/btn4states/delete-32x32.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "custom",
+					"method": "ObjectMethods/bItemDelete.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bItemReload": {
+					"type": "button",
+					"top": 635,
+					"left": 1095,
+					"width": 100,
+					"height": 32,
+					"sizingY": "move",
+					"focusable": false,
+					"text": ":xliff:button.reload",
+					"icon": "/RESOURCES/image/skin/rainbow/btn4states/refresh-32x32.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "custom",
+					"method": "ObjectMethods/bItemReload.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bItemRenounce": {
+					"type": "button",
+					"top": 635,
+					"left": 759,
+					"width": 100,
+					"height": 32,
+					"sizingY": "move",
+					"focusable": false,
+					"text": ":xliff:button.renounce",
+					"icon": "/RESOURCES/image/skin/rainbow/btn4states/back-32x32.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "custom",
+					"method": "ObjectMethods/bItemRenounce.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

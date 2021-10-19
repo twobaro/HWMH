@@ -1,0 +1,435 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"header_bkgd": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 813,
+					"height": 93,
+					"sizingX": "grow",
+					"fill": "#A2C6D8",
+					"stroke": "transparent"
+				},
+				"Texte": {
+					"type": "text",
+					"top": 12,
+					"left": 11,
+					"width": 90,
+					"height": 17,
+					"stroke": "#808080",
+					"text": ":xliff:entry.customer.field.civility"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 37,
+					"left": 11,
+					"width": 90,
+					"height": 17,
+					"stroke": "#808080",
+					"text": ":xliff:entry.customer.field.firstName"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 62,
+					"left": 11,
+					"width": 90,
+					"height": 17,
+					"stroke": "#808080",
+					"text": ":xliff:entry.customer.field.lastName"
+				},
+				"entryField_civility": {
+					"type": "input",
+					"top": 12,
+					"left": 131,
+					"width": 138,
+					"height": 17,
+					"dataSource": "Form:C1466.current_item.civility",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"entryField_firstName": {
+					"type": "input",
+					"top": 37,
+					"left": 131,
+					"width": 138,
+					"height": 17,
+					"dataSource": "Form:C1466.current_item.firstName",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"entryField_lastName": {
+					"type": "input",
+					"top": 62,
+					"left": 131,
+					"width": 138,
+					"height": 17,
+					"dataSource": "Form:C1466.current_item.lastName",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vTabBar_subform": {
+					"type": "subform",
+					"top": 92,
+					"left": 0,
+					"width": 50,
+					"height": 447,
+					"dataSource": "Form:C1466.vTabBar",
+					"detailForm": "sfw_vTabBar",
+					"hideFocusRing": true,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/vTabBar_subform.4dm"
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 12,
+					"left": 282,
+					"width": 115,
+					"height": 17,
+					"stroke": "#808080",
+					"text": ":xliff:entry.customer.field.birthdate"
+				},
+				"entryField_birthdate": {
+					"type": "input",
+					"top": 12,
+					"left": 402,
+					"width": 138,
+					"height": 17,
+					"dataSource": "Form:C1466.current_item.birthdate",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"address_subsubform": {
+					"type": "subform",
+					"top": 94,
+					"left": 58,
+					"width": 607,
+					"height": 180,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Form:C1466.addressSubForm",
+					"detailForm": "sfw_subpanel_address",
+					"hideFocusRing": true,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable"
+				}
+			}
+		},
+		{
+			"objects": {
+				"lb_appointments": {
+					"type": "listbox",
+					"top": 99,
+					"left": 70,
+					"width": 736,
+					"height": 431,
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"movableRows": false,
+					"dataSource": "Form:C1466.lb_appointments",
+					"currentItemSource": "Form:C1466.appointment",
+					"currentItemPositionSource": "Form:C1466.appointment_position",
+					"metaSource": "This:C1470.meta",
+					"scrollbarHorizontal": "automatic",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "#C0C0C0",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Colonne1",
+							"dataSource": "This:C1470.type",
+							"width": 88,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "System Font Regular",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête1",
+								"text": ":xliff:appointment.typeLabel",
+								"fontFamily": "System Font Regular",
+								"fontSize": 10
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "System Font Regular",
+								"fontSize": 10
+							}
+						},
+						{
+							"name": "Colonne2",
+							"dataSource": "This:C1470.date",
+							"width": 75,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "System Font Regular",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête2",
+								"text": ":xliff:dateAndTime.date",
+								"fontFamily": "System Font Regular",
+								"fontSize": 10
+							},
+							"footer": {
+								"name": "Pied2",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "System Font Regular",
+								"fontSize": 10
+							}
+						},
+						{
+							"name": "Colonne3",
+							"dataSource": "This:C1470.time",
+							"width": 75,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "System Font Regular",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête3",
+								"text": ":xliff:dateAndTime.time",
+								"fontFamily": "System Font Regular",
+								"fontSize": 10
+							},
+							"footer": {
+								"name": "Pied3",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "System Font Regular",
+								"fontSize": 10
+							}
+						},
+						{
+							"name": "Colonne4",
+							"dataSource": "This:C1470.duration",
+							"width": 75,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"fontFamily": "System Font Regular",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête4",
+								"text": ":xliff:dateAndTime.duration.abrev",
+								"fontFamily": "System Font Regular",
+								"fontSize": 10
+							},
+							"footer": {
+								"name": "Pied4",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "System Font Regular",
+								"fontSize": 10
+							}
+						},
+						{
+							"name": "Colonne5",
+							"dataSource": "This:C1470.medicalHouse",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "System Font Regular",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête5",
+								"text": ":xliff:entry.medicalHouse",
+								"fontFamily": "System Font Regular",
+								"fontSize": 10
+							},
+							"footer": {
+								"name": "Pied5",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "System Font Regular",
+								"fontSize": 10
+							}
+						},
+						{
+							"name": "Colonne6",
+							"dataSource": "This:C1470.staff",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "System Font Regular",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête6",
+								"text": ":xliff:appointment.staff",
+								"fontFamily": "System Font Regular",
+								"fontSize": 10
+							},
+							"footer": {
+								"name": "Pied6",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "System Font Regular",
+								"fontSize": 10
+							}
+						},
+						{
+							"name": "Colonne7",
+							"dataSource": "This:C1470.purpose",
+							"width": 168,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "System Font Regular",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête7",
+								"text": ":xliff:appointment.purpose",
+								"fontFamily": "System Font Regular",
+								"fontSize": 10
+							},
+							"footer": {
+								"name": "Pied7",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "System Font Regular",
+								"fontSize": 10
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Bouton": {
+					"type": "button",
+					"top": 12,
+					"left": 429,
+					"width": 144,
+					"height": 17,
+					"text": "Copy as medicalStaff",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton1": {
+					"type": "button",
+					"top": 31,
+					"left": 429,
+					"width": 144,
+					"height": 17,
+					"text": "Copy as coach",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Bouton2": {
+					"type": "button",
+					"top": 52,
+					"left": 429,
+					"width": 144,
+					"height": 17,
+					"text": "Copy as MH",
+					"focusable": false,
+					"method": "ObjectMethods/Bouton2.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,60 @@
+{
+    "definition": {
+        "ident": "consultationKind",
+        "visions": ["health"],
+        "xliff": "entry.consultationKinds",
+        "label": "Consultation types",
+        "icon": "image/entry/consultationKind-50x50.png",
+        "dataclass": "ConsultationKind",
+        "searchbox": {
+            "fields": [
+                {
+                    "attribute": "name"
+                }
+            ]
+        },
+        "panel": {
+            "name": "panel_consultationKind",
+            "pages": [
+                {
+                    "page": 1,
+                    "pict": "doctor-32x32.png"
+                }
+            ],
+            "currentPage": 1
+        },
+        "validationRules": [
+            {
+                "field": "name",
+                "widget": "entryField_name",
+                "mandatory": true,
+                "trimSpace": true,
+                "capitalize": true
+            }
+        ],
+
+        "lb_items": {
+            "columns": [
+                {
+                    "attribute": "name",
+                    "label": "name",
+                    "xliff": "entry.consultationKind.field.name",
+                    "width": 200
+                    }
+                ],
+            "orderBy": [
+                {
+                    "propertyPath": "name",
+                    "descending": "false"
+                    }
+                ],
+            "counter": {
+                "format": "###,###,##0 ^1;;",
+                "unit1": "consultation type",
+                "unitN": "consultation types",
+                "unit1xliff":"entry.consultationKind.unit1",
+                "unitNxliff":"entry.consultationKind.unitN"
+            }
+        }
+    }
+}

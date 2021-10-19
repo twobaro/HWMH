@@ -1,0 +1,78 @@
+{
+    "definition": {
+        "ident": "medicalHouse",
+        "visions": ["health", "wellness", "customer"],
+        "xliff": "entry.medicalHouses",
+        "label": "Medical houses",
+        "icon": "image/entry/medicalHouse-50x50.png",
+        "dataclass": "MedicalHouse",
+        "searchbox": {
+            "fields": [
+                {
+                    "attribute": "name"
+                },
+                {
+                    "attribute": "address.address[].detail.city",
+                    "fieldPlaceHolder": "city"
+                }
+            ]
+        },
+        "panel": {
+            "name": "panel_medicalHouse",
+            "pages": [
+                {
+                    "page": 1,
+                    "pict": "address-32x32.png"
+                },
+                {
+                    "page": 2,
+                    "pict": "activity-32x32.png"
+                },
+                {
+                    "page": 3,
+                    "pict": "consultationKind-32x32.png"
+                }]
+        },
+        "lb_items": {
+            "columns": [
+                {
+                    "attribute": "name",
+                    "label": "name",
+                    "xliff": "entry.medicalHouse.field.name",
+                    "width": 200
+                    },
+                {
+                    "attribute": "address.address[0].detail.city",
+                    "label": "City",
+                    "xliff": "address.city",
+                    "orderBy": {
+                        "formula": "this.address.address[0].detail.city"
+                    },
+                    "width": 150
+                },
+                {
+                    "attribute": "level",
+                    "label": "Level",
+                    "xliff": "entry.medicalHouse.field.level",
+                    "width": 20
+                }
+                ],
+            "orderBy": [
+                {
+                    "propertyPath": "level",
+                    "descending": "false"
+                }, {
+                    "propertyPath": "name",
+                    "descending": "false"
+                    }
+                ],
+            "counter": {
+                "format": "###,###,##0 ^1;;",
+                "unit1": "house",
+                "unitN": "houses",
+                "unit1xliff": "entry.medicalHouse.unit1",
+                "unitNxliff": "entry.medicalHouse.unitN"
+            }
+        }
+    }
+}

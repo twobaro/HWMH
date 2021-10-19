@@ -1,0 +1,12 @@
+{
+    "definition": {
+        "ident": "newAppointment",
+        "visions": ["health"],
+        "xliff": "entry.newAppointment",
+        "label": "New Appointment",
+        "icon": "image/entry/newAppointment-50x50.png",
+        "wizard":{
+            "panel":"wizard_newAppointment"
+        }
+    }
+}

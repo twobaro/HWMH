@@ -1,0 +1,91 @@
+{
+    "definition": {
+        "ident": "customer",
+        "visions": ["customer"],
+        "xliff": "entry.customers",
+        "label": "Customers",
+        "icon": "image/entry/customers-50x50.png",
+        "dataclass": "Person",
+        "searchbox": {
+            "fields": [
+                {
+                    "attribute": "firstName"
+                },
+                {
+                    "attribute": "lastName"
+                },
+                {
+                    "attribute": "address.address[].detail.city",
+                    "fieldPlaceHolder": "city"
+                }
+            ]
+        },
+        "panel": {
+            "name": "panel_person",
+            "pages": [
+                {
+                    "page": 1,
+                    "pict": "address-32x32.png"
+                },
+                {
+                    "page": 2,
+                    "pict": "appointments-32x32.png"
+                }]
+        },
+        "validationRules": [
+            {
+                "field": "firstName",
+                "widget": "entryField_firstName",
+                "mandatory": true,
+                "trimSpace": true,
+                "capitalize": true
+            },
+            {
+                "field": "lastName",
+                "widget": "entryField_lastName",
+                "mandatory": true,
+                "trimSpace": true,
+                "uppercase": true
+            }
+        ],
+        "lb_items": {
+            "columns": [
+                {
+                    "attribute": "firstName",
+                    "label": "First Name",
+                    "xliff": "entry.customer.field.firstName"
+                    },
+                {
+                    "attribute": "lastName",
+                    "label": "Last Name",
+                    "xliff": "entry.customer.field.lastName"
+                    },
+                {
+                    "attribute": "address.address[0].detail.city",
+                    "label": "City",
+                    "xliff": "address.city",
+                    "orderBy": {
+                        "formula": "this.address.address[0].detail.city"
+                    }
+                }
+                ],
+            "orderBy": [
+                {
+                    "propertyPath": "lastName",
+                    "descending": "false"
+                    },
+                {
+                    "propertyPath": "firstName",
+                    "descending": "false"
+                    }
+                ],
+            "counter": {
+                "format": "###,###,##0 ^1;;",
+                "unit1": "person",
+                "unitN": "persons",
+                "unit1xliff":"entry.customer.unit1",
+                "unitNxliff":"entry.customer.unitN"
+            }
+        }
+    }
+}

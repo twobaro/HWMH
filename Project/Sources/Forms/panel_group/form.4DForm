@@ -1,0 +1,435 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"header_bkgd": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 673,
+					"height": 73,
+					"sizingX": "grow",
+					"fill": "#E0E6CE",
+					"stroke": "transparent"
+				},
+				"vTabBar_subform": {
+					"type": "subform",
+					"top": 72,
+					"left": 0,
+					"width": 50,
+					"height": 441,
+					"dataSource": "Form:C1466.vTabBar",
+					"detailForm": "sfw_vTabBar",
+					"hideFocusRing": true,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/vTabBar_subform.4dm"
+				},
+				"Texte": {
+					"type": "text",
+					"top": 12,
+					"left": 11,
+					"width": 116,
+					"height": 17,
+					"stroke": "#808080",
+					"text": ":xliff:entry.group.field.name"
+				},
+				"entryField_name": {
+					"type": "input",
+					"top": 12,
+					"left": 131,
+					"width": 298,
+					"height": 17,
+					"dataSource": "Form:C1466.current_item.name",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 35,
+					"left": 11,
+					"width": 116,
+					"height": 17,
+					"stroke": "#808080",
+					"text": ":xliff:entry.group.field.maxMember"
+				},
+				"entryField_name1": {
+					"type": "input",
+					"top": 35,
+					"left": 131,
+					"width": 78,
+					"height": 17,
+					"dataSource": "Form:C1466.current_item.maxMembers",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"lb_members": {
+					"type": "listbox",
+					"top": 78,
+					"left": 78,
+					"width": 588,
+					"height": 266,
+					"sizingX": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"focusable": false,
+					"movableRows": false,
+					"dataSource": "Form:C1466.lb_members",
+					"currentItemSource": "Form:C1466.member",
+					"currentItemPositionSource": "Form:C1466.member_position",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Colonne1",
+							"dataSource": "This:C1470.civility",
+							"width": 57,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête1",
+								"text": ":xliff:entry.customer.field.civility"
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne2",
+							"dataSource": "This:C1470.firstName",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête2",
+								"text": ":xliff:entry.customer.field.firstName"
+							},
+							"footer": {
+								"name": "Pied2",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne4",
+							"dataSource": "This:C1470.lastName",
+							"width": 161,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête4",
+								"text": ":xliff:entry.customer.field.lastName"
+							},
+							"footer": {
+								"name": "Pied4",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne5",
+							"dataSource": "This:C1470.startDate",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête5",
+								"text": ":xliff:entry.member.field.startDate"
+							},
+							"footer": {
+								"name": "Pied5",
+								"timeFormat": "hh_mm_ss"
+							}
+						},
+						{
+							"name": "Colonne3",
+							"dataSource": "This:C1470.endDate",
+							"width": 135,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête3",
+								"text": ":xliff:entry.member.field.endDate"
+							},
+							"footer": {
+								"name": "Pied3",
+								"timeFormat": "hh_mm_ss"
+							}
+						}
+					]
+				},
+				"member_person_inputFirstName": {
+					"type": "input",
+					"top": 350,
+					"left": 193,
+					"width": 78,
+					"height": 14,
+					"dataSource": "Form:C1466.inputPersonFirstName",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/member_person_inputFirstName.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"member_person_inputLastName": {
+					"type": "input",
+					"top": 350,
+					"left": 276,
+					"width": 110,
+					"height": 14,
+					"dataSource": "Form:C1466.inputPersonLastName",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/member_person_inputLastName.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"member_input_entryField_StartDate": {
+					"type": "input",
+					"top": 370,
+					"left": 193,
+					"width": 78,
+					"height": 14,
+					"dataSource": "Form:C1466.member.startDate",
+					"dataSourceTypeHint": "date",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/member_input_entryField_StartDate.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"member_input_entryField_EndDate": {
+					"type": "input",
+					"top": 390,
+					"left": 193,
+					"width": 78,
+					"height": 14,
+					"dataSource": "Form:C1466.member.endDate",
+					"dataSourceTypeHint": "date",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/member_input_entryField_EndDate.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"bMemberAdd": {
+					"type": "button",
+					"top": 95,
+					"left": 54,
+					"width": 21,
+					"height": 21,
+					"focusable": false,
+					"text": "+",
+					"style": "bevel",
+					"method": "ObjectMethods/bMemberAdd.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bMemberDelete": {
+					"type": "button",
+					"top": 115,
+					"left": 54,
+					"width": 21,
+					"height": 21,
+					"focusable": false,
+					"text": "-",
+					"style": "bevel",
+					"method": "ObjectMethods/bMemberDelete.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"member_person_label": {
+					"type": "text",
+					"top": 351,
+					"left": 79,
+					"width": 109,
+					"height": 14,
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": ":xliff:entry.customer"
+				},
+				"pup_member_person": {
+					"type": "button",
+					"top": 348,
+					"left": 390,
+					"width": 15,
+					"height": 18,
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"focusable": false,
+					"popupPlacement": "linked",
+					"style": "bevel",
+					"method": "ObjectMethods/pup_member_person.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"member_startDate_label": {
+					"type": "text",
+					"top": 370,
+					"left": 79,
+					"width": 109,
+					"height": 14,
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": ":xliff:entry.member.field.startDate"
+				},
+				"member_endDate_label": {
+					"type": "text",
+					"top": 390,
+					"left": 79,
+					"width": 109,
+					"height": 14,
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": ":xliff:entry.member.field.endDate"
+				},
+				"pup_dateEnd": {
+					"type": "button",
+					"top": 388,
+					"left": 276,
+					"width": 15,
+					"height": 18,
+					"visibility": "hidden",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"focusable": false,
+					"popupPlacement": "linked",
+					"style": "bevel",
+					"method": "ObjectMethods/pup_dateEnd.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"pup_dateStart": {
+					"type": "button",
+					"top": 368,
+					"left": 276,
+					"width": 15,
+					"height": 18,
+					"visibility": "hidden",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"focusable": false,
+					"popupPlacement": "linked",
+					"style": "bevel",
+					"method": "ObjectMethods/pup_dateStart.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"CadranNbMembers": {
+					"type": "progress",
+					"top": 8,
+					"left": 434,
+					"width": 225,
+					"height": 44,
+					"continuousExecution": false,
+					"showGraduations": true,
+					"min": 0,
+					"max": 100,
+					"graduationStep": 10,
+					"step": 10
+				}
+			}
+		}
+	]
+}

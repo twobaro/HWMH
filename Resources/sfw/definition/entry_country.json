@@ -1,0 +1,68 @@
+{
+    "definition": {
+        "ident": "country",
+        "visions": ["administration"],
+        "xliff": "entry.countries",
+        "label": "Countries",
+        "icon": "image/entry/world-50x50.png",
+        "dataclass": "sfw_Country",
+        "searchbox": {
+            "fields": [
+                {
+                    "attribute": "name"
+                },
+                {
+                    "attribute": "iso_code_2"
+                },
+                {
+                    "attribute": "iso_code_3"
+                }
+            ]
+        },
+        "panel": {
+            "name": "sfw_panel_country",
+            "pages": [
+                {
+                    "page": 1,
+                    "pict": "address-32x32.png"
+                }]
+        },
+        "lb_items": {
+            "columns": [
+                {
+                    "attribute": "flag",
+                    "label": " ",
+                    "width": 30,
+                    "type": "picture",
+                    "orderBy": {
+                        "formula": "this.iso_code_2"
+                    }
+                },
+                {
+                    "attribute": "iso_code_2",
+                    "label": "ISO",
+                    "xliff": "entry.sfw_country.field.iso_code_2",
+                    "width": 30
+                    },
+                {
+                    "attribute": "name",
+                    "label": "Name",
+                    "xliff": "entry.sfw_country.field.name"
+                }
+                ],
+            "orderBy": [
+                {
+                    "propertyPath": "name",
+                    "descending": "false"
+                    }
+                ],
+            "counter": {
+                "format": "###,###,##0 ^1;;",
+                "unit1": "country",
+                "unitN": "countries",
+                "unit1xliff":"entry.sfw_country.unit1",
+                "unitNxliff":"entry.sfw_country.unitN"
+            }
+        }
+    }
+}

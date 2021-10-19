@@ -1,0 +1,2 @@
+sfw_main_searchBox_cross
+

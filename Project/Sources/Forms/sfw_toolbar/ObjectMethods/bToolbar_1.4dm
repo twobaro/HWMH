@@ -1,0 +1,1 @@
+sfw_toolbar_push_icon

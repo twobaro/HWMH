@@ -1,0 +1,100 @@
+{
+    "definition": {
+        "ident": "coach",
+        "visions": ["wellness"],
+        "xliff": "entry.coachs",
+        "label": "Coachs",
+        "icon": "image/entry/coach-50x50.png",
+        "dataclass": "Coach",
+        "searchbox": {
+            "fields": [
+                {
+                    "attribute": "firstName"
+                },
+                {
+                    "attribute": "lastName"
+                },
+                {
+                    "attribute": "address.address[].detail.city",
+                    "fieldPlaceHolder": "city"
+                }
+            ]
+        },
+        "panel": {
+            "name": "panel_coach",
+            "pages": [
+                {
+                    "page": 2,
+                    "pict": "activity-32x32.png"
+                },
+                {
+                    "page": 3,
+                    "pict": "appointments-32x32.png"
+                },
+                {
+                    "page": 1,
+                    "pict": "address-32x32.png"
+                },
+                {
+                    "page": 4,
+                    "pict": "photo-32x32.png"
+                }],
+            "currentPage": 3
+        },
+        "validationRules": [
+            {
+                "field": "firstName",
+                "widget": "entryField_firstName",
+                "mandatory": true,
+                "trimSpace": true,
+                "capitalize": true
+            },
+            {
+                "field": "lastName",
+                "widget": "entryField_lastName",
+                "mandatory": true,
+                "trimSpace": true,
+                "uppercase": true
+            }
+        ],
+        "lb_items": {
+            "columns": [
+                {
+                    "attribute": "firstName",
+                    "label": "First Name",
+                    "xliff": "entry.coach.field.firstName"
+                    },
+                {
+                    "attribute": "lastName",
+                    "label": "Last Name",
+                    "xliff": "entry.coach.field.lastName"
+                    },
+                {
+                    "attribute": "address.address[0].detail.city",
+                    "label": "City",
+                    "xliff": "address.city",
+                    "orderBy": {
+                        "formula": "this.address.address[0].detail.city"
+                    }
+                }
+                ],
+            "orderBy": [
+                {
+                    "propertyPath": "lastName",
+                    "descending": "false"
+                    },
+                {
+                    "propertyPath": "firstName",
+                    "descending": "false"
+                    }
+                ],
+            "counter": {
+                "format": "###,###,##0 ^1;;",
+                "unit1": "coach",
+                "unitN": "coachs",
+                "unit1xliff":"entry.coach.unit1",
+                "unitNxliff":"entry.coach.unitN"
+            }
+        }
+    }
+}

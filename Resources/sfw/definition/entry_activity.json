@@ -1,0 +1,59 @@
+{
+    "definition": {
+        "ident": "activity",
+        "visions": ["wellness"],
+        "xliff": "entry.activities",
+        "label": "Activities",
+        "icon": "image/entry/activity-50x50.png",
+        "dataclass": "Activity",
+        "searchbox": {
+            "fields": [
+                {
+                    "attribute": "name"
+                }
+            ]
+        },
+        "panel": {
+            "name": "panel_activity",
+            "pages": [
+                {
+                    "page": 1,
+                    "pict": "coach-32x32.png"
+                }],
+            "currentPage": 1
+        },
+        "validationRules": [
+            {
+                "field": "name",
+                "widget": "entryField_name",
+                "mandatory": true,
+                "trimSpace": true,
+                "capitalize": true
+            }
+        ],
+
+        "lb_items": {
+            "columns": [
+                {
+                    "attribute": "name",
+                    "label": "name",
+                    "xliff": "entry.activity.field.name",
+                    "width": 200
+                    }
+                ],
+            "orderBy": [
+                {
+                    "propertyPath": "name",
+                    "descending": "false"
+                    }
+                ],
+            "counter": {
+                "format": "###,###,##0 ^1;;",
+                "unit1": "activity",
+                "unitN": "activities",
+                "unit1xliff":"entry.activity.unit1",
+                "unitNxliff":"entry.activity.unitN"
+            }
+        }
+    }
+}

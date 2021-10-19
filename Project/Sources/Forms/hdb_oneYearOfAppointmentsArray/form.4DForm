@@ -1,0 +1,682 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"pup_medicalHouse": {
+					"type": "dropdown",
+					"top": 9,
+					"left": 125,
+					"width": 200,
+					"height": 19,
+					"focusable": false,
+					"method": "ObjectMethods/pup_medicalHouse.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"pup_consultationKind": {
+					"type": "dropdown",
+					"top": 9,
+					"left": 329,
+					"width": 200,
+					"height": 19,
+					"focusable": false,
+					"method": "ObjectMethods/pup_consultationKind.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"pup_year": {
+					"type": "dropdown",
+					"top": 45,
+					"left": 5,
+					"width": 56,
+					"height": 19,
+					"focusable": false,
+					"method": "ObjectMethods/pup_year.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"dayNum_1": {
+					"type": "text",
+					"top": 48,
+					"left": 66,
+					"width": 24,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "1"
+				},
+				"month_1": {
+					"type": "text",
+					"top": 70,
+					"left": 0,
+					"width": 61,
+					"height": 14,
+					"textAlign": "right",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "January"
+				},
+				"month_2": {
+					"type": "text",
+					"top": 94,
+					"left": 0,
+					"width": 61,
+					"height": 14,
+					"textAlign": "right",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "January"
+				},
+				"month_3": {
+					"type": "text",
+					"top": 118,
+					"left": 0,
+					"width": 61,
+					"height": 14,
+					"textAlign": "right",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "January"
+				},
+				"month_4": {
+					"type": "text",
+					"top": 142,
+					"left": 0,
+					"width": 61,
+					"height": 14,
+					"textAlign": "right",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "January"
+				},
+				"month_5": {
+					"type": "text",
+					"top": 166,
+					"left": 0,
+					"width": 61,
+					"height": 14,
+					"textAlign": "right",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "January"
+				},
+				"month_6": {
+					"type": "text",
+					"top": 190,
+					"left": 0,
+					"width": 61,
+					"height": 14,
+					"textAlign": "right",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "January"
+				},
+				"month_7": {
+					"type": "text",
+					"top": 214,
+					"left": 0,
+					"width": 61,
+					"height": 14,
+					"textAlign": "right",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "January"
+				},
+				"month_8": {
+					"type": "text",
+					"top": 238,
+					"left": 0,
+					"width": 61,
+					"height": 14,
+					"textAlign": "right",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "January"
+				},
+				"month_9": {
+					"type": "text",
+					"top": 262,
+					"left": 0,
+					"width": 61,
+					"height": 14,
+					"textAlign": "right",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "January"
+				},
+				"month_10": {
+					"type": "text",
+					"top": 286,
+					"left": 0,
+					"width": 61,
+					"height": 14,
+					"textAlign": "right",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "January"
+				},
+				"month_11": {
+					"type": "text",
+					"top": 310,
+					"left": 0,
+					"width": 61,
+					"height": 14,
+					"textAlign": "right",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "January"
+				},
+				"month_12": {
+					"type": "text",
+					"top": 334,
+					"left": 0,
+					"width": 61,
+					"height": 14,
+					"textAlign": "right",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "January"
+				},
+				"dayNum_2": {
+					"type": "text",
+					"top": 48,
+					"left": 91,
+					"width": 24,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "1"
+				},
+				"dayNum_3": {
+					"type": "text",
+					"top": 48,
+					"left": 116,
+					"width": 24,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "1"
+				},
+				"dayNum_4": {
+					"type": "text",
+					"top": 48,
+					"left": 141,
+					"width": 24,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "1"
+				},
+				"dayNum_5": {
+					"type": "text",
+					"top": 48,
+					"left": 166,
+					"width": 24,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "1"
+				},
+				"dayNum_6": {
+					"type": "text",
+					"top": 48,
+					"left": 191,
+					"width": 24,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "1"
+				},
+				"dayNum_7": {
+					"type": "text",
+					"top": 48,
+					"left": 216,
+					"width": 24,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "1"
+				},
+				"dayNum_8": {
+					"type": "text",
+					"top": 48,
+					"left": 241,
+					"width": 24,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "1"
+				},
+				"dayNum_9": {
+					"type": "text",
+					"top": 48,
+					"left": 266,
+					"width": 24,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "1"
+				},
+				"dayNum_10": {
+					"type": "text",
+					"top": 48,
+					"left": 291,
+					"width": 24,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "1"
+				},
+				"dayNum_11": {
+					"type": "text",
+					"top": 48,
+					"left": 316,
+					"width": 24,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "1"
+				},
+				"dayNum_12": {
+					"type": "text",
+					"top": 48,
+					"left": 341,
+					"width": 24,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "1"
+				},
+				"dayNum_13": {
+					"type": "text",
+					"top": 48,
+					"left": 366,
+					"width": 24,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "1"
+				},
+				"dayNum_14": {
+					"type": "text",
+					"top": 48,
+					"left": 391,
+					"width": 24,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "1"
+				},
+				"dayNum_15": {
+					"type": "text",
+					"top": 48,
+					"left": 416,
+					"width": 24,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "1"
+				},
+				"dayNum_16": {
+					"type": "text",
+					"top": 48,
+					"left": 441,
+					"width": 24,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "1"
+				},
+				"dayNum_17": {
+					"type": "text",
+					"top": 48,
+					"left": 466,
+					"width": 24,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "1"
+				},
+				"dayNum_18": {
+					"type": "text",
+					"top": 48,
+					"left": 491,
+					"width": 24,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "1"
+				},
+				"dayNum_19": {
+					"type": "text",
+					"top": 48,
+					"left": 516,
+					"width": 24,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "1"
+				},
+				"dayNum_20": {
+					"type": "text",
+					"top": 48,
+					"left": 541,
+					"width": 24,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "1"
+				},
+				"dayNum_21": {
+					"type": "text",
+					"top": 48,
+					"left": 566,
+					"width": 24,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "1"
+				},
+				"dayNum_22": {
+					"type": "text",
+					"top": 48,
+					"left": 591,
+					"width": 24,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "1"
+				},
+				"dayNum_23": {
+					"type": "text",
+					"top": 48,
+					"left": 616,
+					"width": 24,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "1"
+				},
+				"dayNum_24": {
+					"type": "text",
+					"top": 48,
+					"left": 641,
+					"width": 24,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "1"
+				},
+				"dayNum_25": {
+					"type": "text",
+					"top": 48,
+					"left": 666,
+					"width": 24,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "1"
+				},
+				"dayNum_26": {
+					"type": "text",
+					"top": 48,
+					"left": 691,
+					"width": 24,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "1"
+				},
+				"dayNum_27": {
+					"type": "text",
+					"top": 48,
+					"left": 716,
+					"width": 24,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "1"
+				},
+				"dayNum_28": {
+					"type": "text",
+					"top": 48,
+					"left": 741,
+					"width": 24,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "1"
+				},
+				"dayNum_29": {
+					"type": "text",
+					"top": 48,
+					"left": 766,
+					"width": 24,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "1"
+				},
+				"dayNum_30": {
+					"type": "text",
+					"top": 48,
+					"left": 791,
+					"width": 24,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "1"
+				},
+				"dayNum_31": {
+					"type": "text",
+					"top": 48,
+					"left": 816,
+					"width": 24,
+					"height": 13,
+					"textAlign": "center",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"text": "1"
+				},
+				"day_1": {
+					"type": "button",
+					"top": 64,
+					"left": 66,
+					"width": 24,
+					"height": 24,
+					"fontFamily": "System Font Regular",
+					"fontSize": 9,
+					"focusable": false,
+					"text": "999",
+					"iconFrames": 4,
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/image/shades/btn4states/red_000-24x24.png",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 11,
+					"left": 744,
+					"width": 96,
+					"height": 17,
+					"dataSource": "Form:C1466.calculation.duration",
+					"dataSourceTypeHint": "number",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Image1": {
+					"type": "picture",
+					"top": 10,
+					"left": 552,
+					"width": 16,
+					"height": 16,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/image/shades/icon/red_000-24x24.png"
+				},
+				"Image2": {
+					"type": "picture",
+					"top": 10,
+					"left": 568,
+					"width": 16,
+					"height": 16,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/image/shades/icon/red_010-24x24.png"
+				},
+				"Image3": {
+					"type": "picture",
+					"top": 10,
+					"left": 584,
+					"width": 16,
+					"height": 16,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/image/shades/icon/red_020-24x24.png"
+				},
+				"Image4": {
+					"type": "picture",
+					"top": 10,
+					"left": 600,
+					"width": 16,
+					"height": 16,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/image/shades/icon/red_030-24x24.png"
+				},
+				"Image5": {
+					"type": "picture",
+					"top": 10,
+					"left": 616,
+					"width": 16,
+					"height": 16,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/image/shades/icon/red_040-24x24.png"
+				},
+				"Image6": {
+					"type": "picture",
+					"top": 10,
+					"left": 632,
+					"width": 16,
+					"height": 16,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/image/shades/icon/red_050-24x24.png"
+				},
+				"Image7": {
+					"type": "picture",
+					"top": 10,
+					"left": 648,
+					"width": 16,
+					"height": 16,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/image/shades/icon/red_060-24x24.png"
+				},
+				"Image8": {
+					"type": "picture",
+					"top": 10,
+					"left": 664,
+					"width": 16,
+					"height": 16,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/image/shades/icon/red_070-24x24.png"
+				},
+				"Image9": {
+					"type": "picture",
+					"top": 10,
+					"left": 680,
+					"width": 16,
+					"height": 16,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/image/shades/icon/red_080-24x24.png"
+				},
+				"Image10": {
+					"type": "picture",
+					"top": 10,
+					"left": 696,
+					"width": 16,
+					"height": 16,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/image/shades/icon/red_090-24x24.png"
+				},
+				"Image11": {
+					"type": "picture",
+					"top": 10,
+					"left": 712,
+					"width": 16,
+					"height": 16,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/image/shades/icon/red_100-24x24.png"
+				}
+			}
+		}
+	]
+}
