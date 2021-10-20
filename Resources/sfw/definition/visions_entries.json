@@ -65,6 +65,14 @@
             "ident": "newAppointment",
             "$ref":"/RESOURCES/sfw/definition/entry_newAppointment.json#/definition"
         },
+           {
+            "ident": "Training",
+            "visions": ["health"],
+            "xliff": "entry.training",
+            "label": "Tranings",
+            "icon": "image/entry/traning-50x50.png",
+            "dataclass": "Traning"
+        },
         {
             "ident": "coach",
             "$ref":"/RESOURCES/sfw/definition/entry_coachs.json#/definition"

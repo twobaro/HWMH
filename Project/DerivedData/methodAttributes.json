@@ -1,0 +1,367 @@
+{
+	"methods": {
+		"MedicalHouse_getFromCache": {
+			"timeStamp": "2021-10-20T16:09:33.285Z"
+		},
+		"MedicalStaff_pageAppointments": {
+			"timeStamp": "2021-10-20T16:09:33.286Z"
+		},
+		"Coach_beforeSave": {
+			"timeStamp": "2021-10-20T16:09:33.281Z"
+		},
+		"sfw_lb_items_search": {
+			"timeStamp": "2021-10-20T16:09:33.292Z"
+		},
+		"sfw_stmp_now": {
+			"timeStamp": "2021-10-20T16:09:33.299Z"
+		},
+		"sfw_xliff_read": {
+			"timeStamp": "2021-10-20T16:09:33.302Z",
+			"attributes": {
+				"publishedWeb": true
+			}
+		},
+		"Activity_getFromCache": {
+			"timeStamp": "2021-10-20T16:09:33.280Z"
+		},
+		"wizard_newAppointment_Redraw": {
+			"timeStamp": "2021-10-20T16:09:33.302Z"
+		},
+		"birthdate_generator": {
+			"timeStamp": "2021-10-20T16:09:33.288Z"
+		},
+		"sfw_Time": {
+			"timeStamp": "2021-10-20T16:09:33.289Z"
+		},
+		"sfw_main_bItemCreate": {
+			"timeStamp": "2021-10-20T16:09:33.292Z"
+		},
+		"ConsultationKind_create": {
+			"timeStamp": "2021-10-20T16:09:33.282Z"
+		},
+		"sfw_country_trigger": {
+			"timeStamp": "2021-10-20T16:09:33.290Z"
+		},
+		"Training_create": {
+			"timeStamp": "2021-10-20T16:21:56.000Z"
+		},
+		"medicalCapabilities_generator": {
+			"timeStamp": "2021-10-20T16:09:33.289Z"
+		},
+		"sfw_main_bItemSave": {
+			"timeStamp": "2021-10-20T16:09:33.293Z"
+		},
+		"sfw_main_searchBox_cross": {
+			"timeStamp": "2021-10-20T16:09:33.295Z"
+		},
+		"sfw_stmp_build": {
+			"timeStamp": "2021-10-20T16:09:33.298Z"
+		},
+		"MedicalStaff_create": {
+			"timeStamp": "2021-10-20T16:09:33.286Z"
+		},
+		"ConsultationKind_getFromCache": {
+			"timeStamp": "2021-10-20T16:09:33.283Z"
+		},
+		"sfw_stmp_full_relative": {
+			"timeStamp": "2021-10-20T16:09:33.298Z"
+		},
+		"appointments_generator": {
+			"timeStamp": "2021-10-20T16:09:33.288Z"
+		},
+		"sfw_main_bItemCancel": {
+			"timeStamp": "2021-10-20T16:09:33.292Z"
+		},
+		"sfw_schedule_getWorkingQuarters": {
+			"timeStamp": "2021-10-20T16:09:33.297Z"
+		},
+		"sfw_main_nothingToSaveOrCancel": {
+			"timeStamp": "2021-10-20T16:09:33.294Z"
+		},
+		"zzImportPerson": {
+			"timeStamp": "2021-10-20T16:09:33.303Z"
+		},
+		"Coach_beforeCancel": {
+			"timeStamp": "2021-10-20T16:09:33.281Z"
+		},
+		"MedicalHouse_trigger": {
+			"timeStamp": "2021-10-20T16:09:33.285Z"
+		},
+		"sfw_stmp_read_date": {
+			"timeStamp": "2021-10-20T16:09:33.299Z"
+		},
+		"sfw_main_searchBox": {
+			"timeStamp": "2021-10-20T16:09:33.294Z"
+		},
+		"sfw_stmp_trunc_min": {
+			"timeStamp": "2021-10-20T16:09:33.300Z"
+		},
+		"sfw_methodExist": {
+			"timeStamp": "2021-10-20T16:09:33.295Z"
+		},
+		"Coach_pageActivities": {
+			"timeStamp": "2021-10-20T16:09:33.282Z"
+		},
+		"sfw_virtual_lb_items_define": {
+			"timeStamp": "2021-10-20T16:09:33.301Z"
+		},
+		"Get_infos": {
+			"timeStamp": "2021-10-20T16:09:33.283Z"
+		},
+		"sfw_lb_items_highlight": {
+			"timeStamp": "2021-10-20T16:09:33.291Z"
+		},
+		"MedicalHouse_pageMedicalCapab": {
+			"timeStamp": "2021-10-20T16:09:33.285Z"
+		},
+		"sfw_date_relative": {
+			"timeStamp": "2021-10-20T16:09:33.290Z"
+		},
+		"MedicalHouse_clear_cache": {
+			"timeStamp": "2021-10-20T16:09:33.284Z"
+		},
+		"sfw_country_tmpt_address": {
+			"timeStamp": "2021-10-20T16:09:33.290Z"
+		},
+		"sfw_main_bMode": {
+			"timeStamp": "2021-10-20T16:09:33.293Z"
+		},
+		"MedicalStaff_getFullName": {
+			"timeStamp": "2021-10-20T16:09:33.286Z"
+		},
+		"Person_pageAppointments": {
+			"timeStamp": "2021-10-20T16:09:33.287Z"
+		},
+		"sfw_schedule_getMaxIRQuarters": {
+			"timeStamp": "2021-10-20T16:09:33.296Z"
+		},
+		"Methode91": {
+			"timeStamp": "2021-10-20T16:09:33.287Z"
+		},
+		"Group_create": {
+			"timeStamp": "2021-10-20T16:09:33.284Z"
+		},
+		"Activity_trigger": {
+			"timeStamp": "2021-10-20T16:09:33.281Z"
+		},
+		"sfw_tool_icon_create4states": {
+			"timeStamp": "2021-10-20T16:09:33.300Z"
+		},
+		"Person_getFullName": {
+			"timeStamp": "2021-10-20T16:09:33.287Z"
+		},
+		"MedicalStaff_beforeSave": {
+			"timeStamp": "2021-10-20T16:09:33.286Z"
+		},
+		"sfw_stmp_nb_minutes": {
+			"timeStamp": "2021-10-20T16:09:33.299Z"
+		},
+		"sfw_cs_register_client": {
+			"timeStamp": "2021-10-20T16:09:33.290Z"
+		},
+		"sfw_schedule_getWRFromQuarters": {
+			"timeStamp": "2021-10-20T16:09:33.296Z"
+		},
+		"sfw_schedule_isAWorkingDay": {
+			"timeStamp": "2021-10-20T16:09:33.297Z"
+		},
+		"sfw_subpanel_schedule_draw": {
+			"timeStamp": "2021-10-20T16:09:33.300Z"
+		},
+		"sfw_shades_getColorWorkingRange": {
+			"timeStamp": "2021-10-20T16:09:33.297Z"
+		},
+		"sfw_schedule_getWorkingPeriods": {
+			"timeStamp": "2021-10-20T16:09:33.296Z"
+		},
+		"sfw_schedule_getWorkingRanges": {
+			"timeStamp": "2021-10-20T16:09:33.297Z"
+		},
+		"sfw_checkIsInModification": {
+			"timeStamp": "2021-10-20T16:09:33.289Z"
+		},
+		"sfw_lb_items_define": {
+			"timeStamp": "2021-10-20T16:09:33.291Z"
+		},
+		"Coach_getFullName": {
+			"timeStamp": "2021-10-20T16:09:33.282Z"
+		},
+		"appointments_update_status": {
+			"timeStamp": "2021-10-20T16:09:33.288Z"
+		},
+		"Activity_create": {
+			"timeStamp": "2021-10-20T16:09:33.280Z"
+		},
+		"sfw_toolbar_push_icon": {
+			"timeStamp": "2021-10-20T16:09:33.301Z"
+		},
+		"sfw_stmp_duration_relative": {
+			"timeStamp": "2021-10-20T16:09:33.298Z"
+		},
+		"sfw_main_draw_button_virtual": {
+			"timeStamp": "2021-10-20T16:09:33.294Z"
+		},
+		"sfw_schedule_drawWorkingRanges": {
+			"timeStamp": "2021-10-20T16:09:33.296Z"
+		},
+		"sfw_main_bItemReload": {
+			"timeStamp": "2021-10-20T16:09:33.293Z"
+		},
+		"MedicalStaff_pageConsultKinds": {
+			"timeStamp": "2021-10-20T16:09:33.287Z"
+		},
+		"Appointment_FindSlots": {
+			"timeStamp": "2021-10-20T16:09:33.281Z"
+		},
+		"sfw_panel_formMethod": {
+			"timeStamp": "2021-10-20T16:09:33.295Z"
+		},
+		"sfw_schedule_subForm_update": {
+			"timeStamp": "2021-10-20T16:09:33.297Z"
+		},
+		"Method109": {
+			"timeStamp": "2021-10-20T16:09:33.287Z"
+		},
+		"sfw_subpanel_schedule_period": {
+			"timeStamp": "2021-10-20T16:09:33.300Z"
+		},
+		"MedicalStaff_beforeCancel": {
+			"timeStamp": "2021-10-20T16:09:33.286Z"
+		},
+		"Activity_pageCapabilities": {
+			"timeStamp": "2021-10-20T16:09:33.281Z"
+		},
+		"Group_beforeSave": {
+			"timeStamp": "2021-10-20T16:09:33.284Z"
+		},
+		"sfw_main_redraw_button": {
+			"timeStamp": "2021-10-20T16:09:33.294Z"
+		},
+		"sfw_virtual_lb_items_doEvent": {
+			"timeStamp": "2021-10-20T16:09:33.302Z"
+		},
+		"ConsultationKind_load_cache": {
+			"timeStamp": "2021-10-20T16:09:33.283Z"
+		},
+		"ConsultationKind_trigger": {
+			"timeStamp": "2021-10-20T16:09:33.283Z"
+		},
+		"MedicalHouse_pageLessonCapab": {
+			"timeStamp": "2021-10-20T16:09:33.285Z"
+		},
+		"sfw_toolbar_launch": {
+			"timeStamp": "2021-10-20T16:09:33.301Z"
+		},
+		"sfw_lb_items_doEvent": {
+			"timeStamp": "2021-10-20T16:09:33.291Z"
+		},
+		"hdb_oneYarOfAppointments": {
+			"timeStamp": "2021-10-20T16:09:33.288Z"
+		},
+		"ConsultationKind_clear_cache": {
+			"timeStamp": "2021-10-20T16:09:33.282Z"
+		},
+		"Activity_clear_cache": {
+			"timeStamp": "2021-10-20T16:09:33.280Z"
+		},
+		"sfw_schedule_getWorkingDuration": {
+			"timeStamp": "2021-10-20T16:09:33.296Z"
+		},
+		"xliff_launch_editor": {
+			"timeStamp": "2021-10-20T16:09:33.302Z"
+		},
+		"sfw_country_clear_cache": {
+			"timeStamp": "2021-10-20T16:09:33.289Z"
+		},
+		"sfw_virtual_lb_items_fill": {
+			"timeStamp": "2021-10-20T16:09:33.302Z"
+		},
+		"sfw_colorize_inputField": {
+			"timeStamp": "2021-10-20T16:09:33.289Z"
+		},
+		"lessonCapabilities_generator": {
+			"timeStamp": "2021-10-20T16:09:33.289Z"
+		},
+		"Coach_pageAppointments": {
+			"timeStamp": "2021-10-20T16:09:33.282Z"
+		},
+		"sfw_main_vSplitter": {
+			"timeStamp": "2021-10-20T16:09:33.295Z"
+		},
+		"sfw_virtual_lb_items_selChange": {
+			"timeStamp": "2021-10-20T16:09:33.302Z"
+		},
+		"sfw_main_bItemDelete": {
+			"timeStamp": "2021-10-20T16:09:33.293Z"
+		},
+		"sfw_stmp_read_time_in_sec": {
+			"timeStamp": "2021-10-20T16:09:33.299Z"
+		},
+		"Group_getFullName": {
+			"timeStamp": "2021-10-20T16:09:33.284Z"
+		},
+		"sfw_definitions_load_from_disk": {
+			"timeStamp": "2021-10-20T16:09:33.290Z"
+		},
+		"zzzz": {
+			"timeStamp": "2021-10-20T16:09:33.303Z"
+		},
+		"appointments_cleaner": {
+			"timeStamp": "2021-10-20T16:09:33.287Z"
+		},
+		"sfw_dropbox_update_Btn4States": {
+			"timeStamp": "2021-10-20T16:09:33.291Z"
+		},
+		"sfw_main_bItemRenounce": {
+			"timeStamp": "2021-10-20T16:09:33.293Z"
+		},
+		"Group_pageMembers": {
+			"timeStamp": "2021-10-20T16:09:33.284Z"
+		},
+		"sfw_stmp_date_relative": {
+			"timeStamp": "2021-10-20T16:09:33.298Z"
+		},
+		"Activity_load_cache": {
+			"timeStamp": "2021-10-20T16:09:33.280Z"
+		},
+		"sfw_lb_items_sort": {
+			"timeStamp": "2021-10-20T16:09:33.292Z"
+		},
+		"sfw_on_startup_database": {
+			"timeStamp": "2021-10-20T16:09:33.295Z"
+		},
+		"sfw_subpanel_schedule_init": {
+			"timeStamp": "2021-10-20T16:09:33.300Z"
+		},
+		"sfw_on_server_startup_database": {
+			"timeStamp": "2021-10-20T16:09:33.295Z"
+		},
+		"MedicalHouse_load_cache": {
+			"timeStamp": "2021-10-20T16:09:33.285Z"
+		},
+		"sfw_country_load_cache": {
+			"timeStamp": "2021-10-20T16:09:33.290Z"
+		},
+		"Coach_create": {
+			"timeStamp": "2021-10-20T16:09:33.282Z"
+		},
+		"sfw_lb_items_manage": {
+			"timeStamp": "2021-10-20T16:09:33.291Z"
+		},
+		"sfw_lb_items_selectionChange": {
+			"timeStamp": "2021-10-20T16:09:33.292Z"
+		},
+		"sfw_toolbar_draw": {
+			"timeStamp": "2021-10-20T16:09:33.301Z"
+		},
+		"sfw_stmp_read_time": {
+			"timeStamp": "2021-10-20T16:09:33.299Z"
+		},
+		"sfw_main_draw_button": {
+			"timeStamp": "2021-10-20T16:09:33.294Z"
+		},
+		"sfw_quarters_fillWWorkingRanges": {
+			"timeStamp": "2021-10-20T16:09:33.296Z"
+		}
+	}
+}
