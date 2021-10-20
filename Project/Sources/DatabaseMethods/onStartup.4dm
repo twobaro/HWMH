@@ -1,6 +1,7 @@
 sfw_on_startup_database
 
 //Method description...
+Get_infos
 appointments_cleaner
 
 If (Not:C34(Is compiled mode:C492))
